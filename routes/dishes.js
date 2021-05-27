@@ -1,6 +1,6 @@
 import { Router } from "express";
 import * as controllers from "../controllers/dishes.js";
-import restrict from "../helpers/restrict.js";
+import restrict from "../helper/restrict.js";
 
 const router = Router();
 
