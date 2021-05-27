@@ -8,13 +8,13 @@ const Nav = () => {
           GeodishApp
         </NavLink>
         <div className="links">
-          {user && <div className="link welcome">Welcome, {user.username}</div>}
+          {/* {user && <div className="link welcome">Welcome, {user.username}</div>}
           {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
-          <Navlink to="/">Dishes</Navlink>
-          <Navlink to="/create-dish">Create Dish</Navlink>
-          <Navlink to="/login">Login</Navlink>
-          <Navlink to="/signup">Sign Up</Navlink>
+          {user ? authenticatedOptions : unauthenticatedOptions} */}
+          <NavLink to="/">Dishes</NavLink>
+          <NavLink to="/add-dishes">Create Dish</NavLink>
+          <NavLink to="/sign-in">Sign In</NavLink>
+          <NavLink to="/sign-up">Sign Up</NavLink>
         </div>
       </div>
     </nav>
