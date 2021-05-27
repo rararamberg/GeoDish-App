@@ -43,7 +43,7 @@ app.get("/dishes/:id", async (req, res) => {
 
 app.post("/dishes", async (req, res) => {
   try {
-    const dish = await new Dish(req.body);
+    const dish = new Dish(req.body);
     await dish.save();
     res.status(201).json(dish);
   } catch (error) {
