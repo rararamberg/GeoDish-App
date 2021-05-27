@@ -3,8 +3,8 @@ import logger from "morgan";
 
 const PORT = process.env.PORT || 3000;
 
-import db from "../db/connection.js";
-import Dish from "../models/dish.js";
+import db from "./db/connection.js";
+import Dish from "./models/dish.js";
 
 const app = express();
 
