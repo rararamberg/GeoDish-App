@@ -46,13 +46,13 @@ export const createDish = async (req, res) => {
   }
 };
 
-export const updateProduct = async (req, res) => {
+export const updateDish = async (req, res) => {
   const { id } = req.params;
   const dish = await Dish.findByIdAndUpdate(id, req.body, { new: true });
   res.status(200).json(dish);
 };
 
-export const deleteProduct = async (req, res) => {
+export const deleteDish = async (req, res) => {
   try {
     const { id } = req.params;
     const deleted = await Dish.findByIdAndDelete(id);
