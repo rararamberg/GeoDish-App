@@ -6,7 +6,7 @@ const SignIn = () => {
       <main className="sign-in-container">
         you'll see the sign in form here
         <h2 className="log-in">LOG IN</h2>
-        <form className="login-container">
+        <form className="login-form">
           <label>Email Address</label>
           <input
             required
