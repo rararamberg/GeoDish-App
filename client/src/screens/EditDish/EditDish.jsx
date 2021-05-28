@@ -11,7 +11,7 @@ const EditDish = (props) => {
     restaurant_url: "",
     description: "",
     price: "",
-    keywords: "",
+    keywords: [],
   });
 
   const [isUpdated, setUpdated] = useState(false);
@@ -40,13 +40,12 @@ const EditDish = (props) => {
   };
 
   if (isUpdated) {
-    return <Redirect to={`/dish/${id}`} />;
+    return <Redirect to={`/dishes/${id}`} />;
   }
 
   return (
     <Layout user={props.user}>
       <main className="edit-dish-container">
-        you'll see the form to edit one of the dishes
         <div className="dish-edit">
           <div className="image-container">
             <img
