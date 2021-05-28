@@ -45,7 +45,7 @@ const SignUp = (props) => {
         username: "",
         email: "",
         password: "",
-        passwordConfirmation: "",
+        confirmPassword: "",
         isError: true,
         errorMsg: "Sign Up Details Invalid",
       });
@@ -71,53 +71,54 @@ const SignUp = (props) => {
   };
 
   // destructure form's email, pw, pw confirm, and username
-  const { username, email, password, passwordConfirmation } = form;
+  const { username, email, password, confirmPassword } = form;
 
   return (
     <Layout>
-      <main className="sign-up-container">this is the signup form</main>
-      <h2 className="create-accoutn">CREATE ACCOUNT</h2>
-      <form className="signup-form">
-        <div className="input-container">
-          <label>Username</label>
-          <input
-            required
-            type="text"
-            name="username"
-            // value={ }
-            // onChange={handleChange}
-          />
-          <label>Email Address</label>
-          <input
-            required
-            type="text"
-            name="email"
-            // value={ }
-            // onChange={handleChange}
-          />
-          <label>Password</label>
-          <input
-            required
-            type="password"
-            name="password"
-            // value={ }
-            // onChange={handleChange}
-          />
-          <label>Confirm Password</label>
-          <input
-            required
-            type="password"
-            name="confirmPassword"
-            // value={confirmPassword}
-            // onChange={handleChange}
-          />
-        </div>
-        {/* end input div */}
+      <main className="sign-up-container">
+        <h2 className="create-accoutn">CREATE ACCOUNT</h2>
+        <form onSubmit={onSignUp} className="signup-form">
+          <div className="input-container">
+            <label>Username</label>
+            <input
+              required
+              type="text"
+              name="username"
+              value={username}
+              onChange={handleChange}
+            />
+            <label>Email Address</label>
+            <input
+              required
+              type="text"
+              name="email"
+              value={email}
+              onChange={handleChange}
+            />
+            <label>Password</label>
+            <input
+              required
+              type="password"
+              name="password"
+              value={password}
+              onChange={handleChange}
+            />
+            <label>Confirm Password</label>
+            <input
+              required
+              type="password"
+              name="confirmPassword"
+              value={confirmPassword}
+              onChange={handleChange}
+            />
+          </div>
+          {/* end input div */}
 
-        {/* {renderError()} */}
-        {/* TAKE OUT BTN BELOW IF RENDERERROR IS FUNCTIONAL */}
-        <button className="signup-btn">SIGN UP</button>
-      </form>
+          {renderError()}
+          {/* TAKE OUT BTN BELOW IF RENDERERROR IS FUNCTIONAL */}
+          {/* <button className="signup-btn">SIGN UP</button> */}
+        </form>
+      </main>
     </Layout>
   );
 };
