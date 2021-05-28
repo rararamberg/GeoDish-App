@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./SignIn.css";
 import { signIn } from "../../services/users";
-// import { signIn } from '../../services/users'
 
 const SignIn = (props) => {
   // use history to redirect user on site
@@ -29,7 +28,7 @@ const SignIn = (props) => {
   const onSignIn = async (e) => {
     // prevent default behavior
     e.preventDefault();
-    // destructer passed in props (setUser)
+    // destructure passed in props (setUser)
     const { setUser } = props;
     try {
       const user = await signIn(form);
@@ -66,6 +65,9 @@ const SignIn = (props) => {
       );
     }
   };
+
+  // destructure form's email and password
+  const { email, password } = form;
 
   return (
     <Layout>
