@@ -10,8 +10,9 @@ const AddDishes = (props) => {
     description: "",
     img_url: "",
     restaurant_url: "",
+    location: "",
     price: "",
-    keyword:"",
+    keyword: "",
   });
 
   const [isCreated, setCreated] = useState(false);
@@ -48,11 +49,20 @@ const AddDishes = (props) => {
             autoFocus
             onChange={handleChange}
           />
-           <input
+          <input
             className="input-name"
             placeholder="Restaurant"
             value={dish.restaurant}
             name="restaurant"
+            required
+            autoFocus
+            onChange={handleChange}
+          />
+          <input
+            className="input-location"
+            placeholder="Location"
+            value={dish.location}
+            name="location"
             required
             autoFocus
             onChange={handleChange}
@@ -83,15 +93,15 @@ const AddDishes = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-image-link"
-            placeholder="Image Link"
+            className="input-restaurant-link"
+            placeholder="Restaurant Link"
             value={dish.restaurant_url}
             name="restaurant_url"
             required
             onChange={handleChange}
           />
           <input
-            className="input-image-link"
+            className="input-keyword"
             placeholder="Keywords"
             value={dish.keywords}
             name="keywords"

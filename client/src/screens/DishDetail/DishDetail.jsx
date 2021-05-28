@@ -30,6 +30,7 @@ const DishDetail = (props) => {
         <div className="detail">
           <div className="name">{dish.name}</div>
           <div className="restaurant">{dish.restaurant}</div>
+          <div className="location">{dish.location}</div>
           <div className="restaurant-url">
             {dish.restaurant_url}
           </div>
