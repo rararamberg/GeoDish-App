@@ -4,22 +4,24 @@ import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const DishDetail = (props) => {
-  const [dish, setDish] = useState({});
-  // const [isLoaded, setLoaded] = useState(false);
+  const [dish, setDish] = useState(null);
+  const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+  console.log(id);
 
   useEffect(() => {
     const fetchDish = async () => {
       const dish = await getDish(id);
+      console.log(dish);
       setDish(dish);
-      // setLoaded(true);
+      setLoaded(true);
     };
     fetchDish();
   }, [id]);
 
-  // if (!isLoaded) {
-  //   return <h1>Amazing food is on the way...</h1>;
-  // }
+  if (!isLoaded) {
+    return <h1>Amazing food is on the way...</h1>;
+  }
 
   return (
     <Layout user={props.user}>

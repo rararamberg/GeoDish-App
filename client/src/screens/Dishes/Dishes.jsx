@@ -22,6 +22,7 @@ const Dishes = (props) => {
         <div>
           {dishes.map((dish) => (
             <Dish
+              _id={dish._id}
               img_url={dish.img_url}
               name={dish.name}
               restaurant={dish.restaurant}
