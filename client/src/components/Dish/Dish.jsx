@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Dish = (props) => {
   return (
     <div>
-      <Link className="dish" to={`/dishes/${props.id}`}>
+      <Link className="dish" to={`/dishes/${props._id}`}>
         <img className="dish-image" src={props.img_url} alt={props.name} />
         <div className="dish-name">{props.name}</div>
         <div className="dish-restaurant-name">{props.restaurant}</div>
