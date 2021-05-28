@@ -9,6 +9,7 @@ const EditDish = (props) => {
     restaurant: "",
     img_url: "",
     restaurant_url: "",
+    location: "",
     description: "",
     price: "",
     keywords: [],
@@ -50,21 +51,57 @@ const EditDish = (props) => {
           <div className="image-container">
             <img
               className="edit-dish-image"
-              src={dish.imgURL}
+              src={dish.img_url}
               alt={dish.name}
             />
             <form onSubmit={handleSubmit}>
               <input
                 className="edit-input-image-link"
                 placeholder="Image Link"
-                value={dish.imgURL}
-                name="imgURL"
+                value={dish.img_url}
+                name="img_url"
                 required
                 onChange={handleChange}
               />
             </form>
           </div>
           <form className="edit-form" onSubmit={handleSubmit}>
+            <input
+              className="input-location"
+              placeholder="Location"
+              value={dish.location}
+              name="location"
+              required
+              autoFocus
+              onChange={handleChange}
+            />
+            <input
+              className="input-restaurant"
+              placeholder="Restaurant"
+              value={dish.restaurant}
+              name="restaurant"
+              required
+              autoFocus
+              onChange={handleChange}
+            />
+            <input
+              className="input-restaurant_url"
+              placeholder="Retaurant_url"
+              value={dish.restaurant_url}
+              name="restaurant_url"
+              required
+              autoFocus
+              onChange={handleChange}
+            />
+            <input
+              className="input-keywords"
+              placeholder="Keywords"
+              value={dish.keywords}
+              name="keywords"
+              required
+              autoFocus
+              onChange={handleChange}
+            />
             <input
               className="input-name"
               placeholder="Name"
