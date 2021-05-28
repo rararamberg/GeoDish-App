@@ -3,7 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import { useParams, Redirect } from "react-router-dom";
 import { getDish, updateDish } from "../../services/dishes";
 
-const EditDish = () => {
+const EditDish = (props) => {
   const [dish, setDish] = useState({
     name: "",
     restaurant: "",
@@ -44,7 +44,7 @@ const EditDish = () => {
   }
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <main className="edit-dish-container">
         you'll see the form to edit one of the dishes
         <div className="dish-edit">

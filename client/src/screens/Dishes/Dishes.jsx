@@ -3,7 +3,7 @@ import Dish from "../../components/Dish/Dish";
 import { useState, useEffect } from "react";
 import { getDishes } from "../../services/dishes";
 
-const Dishes = () => {
+const Dishes = (props) => {
   const [dishes, setDishes] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const Dishes = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <main className="dishes-container">
         <span>Dish Page</span>
         <div>

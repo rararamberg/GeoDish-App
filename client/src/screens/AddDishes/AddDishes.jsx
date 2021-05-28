@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import Layout from '../../components/Layout/Layout'
-import { Redirect } from 'react-router-dom'
-import { createDish } from '../../services/dishes'
+import { useState } from "react";
+import Layout from "../../components/Layout/Layout";
+import { Redirect } from "react-router-dom";
+import { createDish } from "../../services/dishes";
 
-const AddDishes = () => {
+const AddDishes = (props) => {
   const [dish, setDish] = useState({
     name: "",
     description: "",
@@ -32,7 +32,7 @@ const AddDishes = () => {
   }
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <main className="add-dishes-container">
         form for adding Dishes
         <form className="create-form" onSubmit={handleSubmit}>

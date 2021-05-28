@@ -5,6 +5,7 @@ import AddDishes from "./screens/AddDishes/AddDishes";
 import EditDish from "./screens/EditDish/EditDish";
 import SignIn from "./screens/SignIn/SignIn";
 import SignUp from "./screens/SignUp/SignUp";
+import SignOut from "./screens/SignOut/SignOut";
 import { verifyUser } from "./services/users";
 import { useState, useEffect } from "react";
 import "./App.css";
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route path="/sign-in">
           <SignIn setUser={setUser} />
+        </Route>
+        <Route path="/sign-out">
+          <SignOut setUser={setUser} />
         </Route>
         <Route path="/add-dishes">
           {/* <AddDishes user={user} /> */}

@@ -33,14 +33,14 @@ export const verifyUser = async () => {
 };
 
 // // MAY USE LATER
-// // export const signOut = async () => {
-// //   try {
-// //     localStorage.removeItem("token")
-// //     return true
-// //   } catch (error) {
-// //     throw error
-// //   }
-// // }
+export const signOut = async () => {
+  try {
+    localStorage.removeItem("token");
+    return true;
+  } catch (error) {
+    throw error;
+  }
+};
 
 // // MAY USE LATER
 // // export const changePassword = async (passwords, user) => {

@@ -22,7 +22,7 @@ const DishDetail = (props) => {
   // }
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <main className="dish-detail-container">
         <img className="dish-detail-image" src={dish.img_url} alt={dish.name} />
         <div className="detail">
