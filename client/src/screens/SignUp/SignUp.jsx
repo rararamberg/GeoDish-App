@@ -1,4 +1,8 @@
 import Layout from "../../components/Layout/Layout";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import "./SignUp.css";
+// import { signUp } from '../../services/users'
 
 const SignUp = () => {
   return (
