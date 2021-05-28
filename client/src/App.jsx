@@ -36,13 +36,13 @@ function App() {
         <Route path="/sign-out">
           <SignOut setUser={setUser} />
         </Route>
-        <Route path="/add-dishes">
-          {/* <AddDishes user={user} /> */}
-          {user ? <AddDishes user={user} /> : <Redirect to="/sign-up" />}
+        <Route path="/add-dish">
+          <AddDishes user={user} />
+          {/* {user ? <AddDishes user={user} /> : <Redirect to="/sign-up" />} */}
         </Route>
         <Route exact path="/dishes/:id/edit">
-          {/* <EditDish user={user} /> */}
-          {user ? <EditDish user={user} /> : <Redirect to="/" />}
+          <EditDish user={user} />
+          {/* {user ? <EditDish user={user} /> : <Redirect to="/" />} */}
         </Route>
         <Route exact path="/dishes/:id">
           <DishDetail user={user} />
