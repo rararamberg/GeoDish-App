@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "./Nav.css";
 
 const Nav = ({ user }) => {
   const authenticatedOptions = (
@@ -31,13 +32,13 @@ const Nav = ({ user }) => {
 
   return (
     <nav>
-      <div className="nav">
+      <div className="nav-bar">
         <NavLink className="logo" to="/">
           GeodishApp
         </NavLink>
+        {alwaysOptions}
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.username}</div>}
-          {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
           {/* <NavLink to="/">Dishes</NavLink>
           <NavLink to="/add-dishes">Create Dish</NavLink>
