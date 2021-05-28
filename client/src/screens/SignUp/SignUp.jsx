@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import "./SignUp.css";
 // import { signUp } from '../../services/users'
 
-const SignUp = () => {
+const SignUp = (props) => {
   return (
     <Layout>
       <main className="sign-up-container">this is the signup form</main>
@@ -39,8 +39,8 @@ const SignUp = () => {
           <input
             required
             type="password"
-            name="password"
-            // value={ }
+            name="confirmPassword"
+            // value={confirmPassword}
             // onChange={handleChange}
           />
         </div>
