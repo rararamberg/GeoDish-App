@@ -28,14 +28,14 @@ const DishDetail = (props) => {
       <main className="dish-detail-container">
         <img className="dish-detail-image" src={dish.img_url} alt={dish.name} />
         <div className="detail">
-          <div className="name">name{dish.name}</div>
-          <div className="restaurant">restaurant{dish.restaurant}</div>
+          <div className="name">{dish.name}</div>
+          <div className="restaurant">{dish.restaurant}</div>
           <div className="restaurant-url">
-            restaurant url {dish.restaurant_url}
+            {dish.restaurant_url}
           </div>
-          <div className="price">price{dish.price}</div>
-          <div className="description">description{dish.description}</div>
-          <div className="keywords">keywords{dish.keywords}</div>
+          <div className="price">{dish.price}</div>
+          <div className="description">{dish.description}</div>
+          <div className="keywords">{dish.keywords}</div>
           <div className="button-container">
             <button>
               <Link className="edit-button" to={`/dishes/${dish._id}/edit`}>
