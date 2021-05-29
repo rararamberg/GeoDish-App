@@ -1,5 +1,20 @@
 nav {
   padding: 20px;
+  background-color: #3b3834;
+  margin-bottom: 45px;
+  letter-spacing: 2.5px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav .logo {
+  color: #00917d;
+  font-size: 56px;
+  text-shadow: 1px 1px #000000;
 }
 
 .nav-bar {
@@ -7,6 +22,46 @@ nav {
   justify-content: space-between;
 }
 
-.links a {
-  margin: 0 10px;
+.link {
+  margin: 10px 10px;
+  color: #f4f0ea;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px #000000;
+  font-weight: bold;
+}
+
+.links {
+  padding: 20px 0px 10px 0px;
+}
+
+.link-welcome {
+  color: #f4f0ea;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.signout-link {
+  background-color: #e1d2bb;
+  color: #3b3834;
+  font-weight: bold;
+  border: 1px solid #000000;
+}
+
+.signout-link:hover {
+  text-shadow: 1px 1px #000000;
+  font-weight: bold;
+}
+
+.signup-link {
+  background-color: #00917d;
+  color: #f4f0ea;
+  font-weight: bold;
+  border: 1px solid #000000;
+}
+
+.signup-link:hover {
+  text-shadow: 1px 1px #000000;
 }
