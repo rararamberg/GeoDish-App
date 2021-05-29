@@ -2,6 +2,7 @@ import Layout from "../../components/Layout/Layout";
 import { getDish, deleteDish } from "../../services/dishes";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "./DishDetail.css";
 
 const DishDetail = (props) => {
   const [dish, setDish] = useState(null);
@@ -26,30 +27,30 @@ const DishDetail = (props) => {
   return (
     <Layout user={props.user}>
       <main className="dish-detail-container">
-        <img className="dish-detail-image" src={dish.img_url} alt={dish.name} />
-        <div className="detail">
+        <div className="image-container">
+          <img className="dish-image" src={dish.img_url} alt={dish.name} />
+        </div>
+        <div className="detail-container">
           <div className="name">{dish.name}</div>
           <div className="restaurant">{dish.restaurant}</div>
           <div className="location">{dish.location}</div>
-          <div className="restaurant-url">
-            {dish.restaurant_url}
-          </div>
-          <div className="price">{dish.price}</div>
+          <div className="restaurant-url">{dish.restaurant_url}</div>
+          <div className="price">${dish.price}</div>
           <div className="description">{dish.description}</div>
           <div className="keywords">{dish.keywords}</div>
-          <div className="button-container">
-            <button>
-              <Link className="edit-button" to={`/dishes/${dish._id}/edit`}>
-                Edit
-              </Link>
-            </button>
-            <button
-              className="delete-button"
-              onClick={() => deleteDish(dish._id)}
-            >
-              Delete
-            </button>
-          </div>
+        </div>
+        <div className="button-container">
+          <button>
+            <Link className="edit-button" to={`/dishes/${dish._id}/edit`}>
+              Edit
+            </Link>
+          </button>
+          <button
+            className="delete-button"
+            onClick={() => deleteDish(dish._id)}
+          >
+            Delete
+          </button>
         </div>
       </main>
     </Layout>

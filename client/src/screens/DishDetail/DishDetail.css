@@ -1,0 +1,29 @@
+.dish-detail-container {
+  display: flex;
+  padding: 100px;
+  background-color: #e5e5e5;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 80px;
+}
+
+.dish-image {
+  width: 350px;
+  height: auto;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  background-color: #e1d2bb;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
