@@ -75,7 +75,7 @@ const SignUp = (props) => {
 
   return (
     <Layout>
-      <main className="sign-up-container">
+      <main className="signup-container">
         <form onSubmit={onSignUp} className="signup-form">
           <h2 className="create-account">CREATE ACCOUNT</h2>
           <div className="signup-input-container">

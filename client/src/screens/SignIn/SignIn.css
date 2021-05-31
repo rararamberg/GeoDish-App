@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .sign-in-container {
   background-color: #f4f0ea;
   padding: 5%;
@@ -19,10 +22,13 @@
   flex-direction: column;
   text-align: left;
   font-weight: bold;
+  font-family: "Roboto";
+  letter-spacing: 0.5px;
 }
 
 .log-in {
   font-size: 36px;
+  font-family: "Chewy";
 }
 
 .input-email {
@@ -47,5 +53,5 @@
   cursor: pointer;
   padding: 2px;
   text-decoration: none;
-  font-weight: bold;
+  font-family: "Chewy";
 }

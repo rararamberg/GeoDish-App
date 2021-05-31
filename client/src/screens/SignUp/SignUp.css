@@ -1,4 +1,7 @@
-.sign-up-container {
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.signup-container {
   background-color: #f4f0ea;
   padding: 5%;
 }
@@ -14,11 +17,17 @@
   line-height: 2;
 }
 
+.create-account {
+  font-family: "Chewy";
+}
+
 .signup-input-container {
   display: flex;
   flex-direction: column;
   text-align: left;
   font-weight: bold;
+  font-family: "Roboto";
+  letter-spacing: 0.5px;
 }
 
 .signup-input-username {
@@ -53,5 +62,5 @@
   cursor: pointer;
   padding: 2px;
   text-decoration: none;
-  font-weight: bold;
+  font-family: "Chewy";
 }

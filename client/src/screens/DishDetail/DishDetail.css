@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .dish-detail-container {
   display: flex;
   padding: 100px;
@@ -28,6 +31,7 @@
   text-align: left;
   margin-bottom: 30px;
   padding: 5px 10px 10px 15px;
+  font-family: "Roboto";
 }
 
 .details-name {
@@ -55,6 +59,7 @@
   justify-content: left;
 }
 
+/* does anyone have any buttons that aren't defined that would coincide with this...? */
 button {
   background-color: #e1d2bb;
   height: 40px;
@@ -70,7 +75,7 @@ button {
   color: black;
   cursor: pointer;
   text-decoration: none;
-  font-weight: bold;
+  font-family: "Chewy";
 }
 
 .delete-button {
@@ -86,5 +91,5 @@ button {
   border: none;
   cursor: pointer;
   padding: 2px;
-  font-weight: bold;
+  font-family: "Chewy";
 }

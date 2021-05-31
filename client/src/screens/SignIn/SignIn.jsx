@@ -60,7 +60,7 @@ const SignIn = (props) => {
     } else {
       return (
         <button className="login-btn" type="submit">
-          LOG IN
+          SIGN IN
         </button>
       );
     }
