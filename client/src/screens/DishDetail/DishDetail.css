@@ -1,7 +1,7 @@
 .dish-detail-container {
   display: flex;
   padding: 100px;
-  background-color: #e5e5e5;
+  background-color: #f4f0ea;
 }
 
 .image-container {
@@ -19,11 +19,69 @@
 .detail-container {
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.details {
   background-color: #e1d2bb;
+  border-color: black;
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 5px 10px 10px 15px;
+}
+
+.details-name {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.details-location {
+  margin-bottom: 20px;
+}
+
+.details-description {
+  margin-bottom: 20px;
+}
+
+.details-price {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .button-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.edit-button {
+  font-size: 22px;
+  text-align: center;
+  height: 25px;
+  width: 25%;
+  align-self: center;
+  margin-top: 20px;
+  background-color: #e1d2bb;
+  color: black;
+  cursor: pointer;
+  padding: 2px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.delete-button {
+  font-size: 22px;
+  text-align: center;
+  height: 40px;
+  width: 20%;
+  align-self: center;
+  margin-top: 40px;
+  margin-left: 40px;
+  background-color: black;
+  color: #e1d2bb;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
+  padding: 2px;
+  font-weight: bold;
 }

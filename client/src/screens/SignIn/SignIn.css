@@ -1,0 +1,51 @@
+.sign-in-container {
+  background-color: #f4f0ea;
+  padding: 5%;
+}
+
+.login-form {
+  background-color: #e1d2bb;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20%;
+  padding: 0 5% 5% 5%;
+  line-height: 2;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: bold;
+}
+
+.log-in {
+  font-size: 36px;
+}
+
+.input-email {
+  border: 0;
+  height: 20px;
+}
+
+.input-password {
+  border: 0;
+  height: 20px;
+}
+
+.sign-in-container button {
+  margin-top: 40px;
+  font-size: 22px;
+  text-align: center;
+  height: 40px;
+  width: 25%;
+  align-self: center;
+  background-color: #00917d;
+  color: black;
+  cursor: pointer;
+  padding: 2px;
+  text-decoration: none;
+  font-weight: bold;
+}

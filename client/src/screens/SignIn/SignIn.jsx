@@ -72,12 +72,13 @@ const SignIn = (props) => {
   return (
     <Layout>
       <main className="sign-in-container">
-        <h2 className="log-in">LOG IN</h2>
         <form onSubmit={onSignIn} className="login-form">
+          <h2 className="log-in">LOG IN</h2>
           <div className="input-container">
             <label>Email Address</label>
             <input
               required
+              className="input-email"
               type="text"
               name="email"
               value={email}
@@ -87,18 +88,19 @@ const SignIn = (props) => {
             <label>Password</label>
             <input
               required
+              className="input-password"
               type="password"
               name="password"
               value={password}
               onChange={handleChange}
               placeholder="your-password"
             />
-          </div>
-          {renderError()}
-          {/* TAKE OUT BTN BELOW IF RENDERERROR IS FUNCTIONAL */}
-          {/* <button className="login-btn" type="submit">
+            {renderError()}
+            {/* TAKE OUT BTN BELOW IF RENDERERROR IS FUNCTIONAL */}
+            {/* <button className="login-btn" type="submit">
             LOG IN
           </button> */}
+          </div>
         </form>
       </main>
     </Layout>
