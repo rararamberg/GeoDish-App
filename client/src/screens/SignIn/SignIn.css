@@ -29,6 +29,7 @@
 .log-in {
   font-size: 36px;
   font-family: "Chewy";
+  letter-spacing: 2px;
 }
 
 .input-email {
@@ -53,5 +54,6 @@
   cursor: pointer;
   padding: 2px;
   text-decoration: none;
+  letter-spacing: 1px;
   font-family: "Chewy";
 }

@@ -76,6 +76,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   font-family: "Chewy";
+  letter-spacing: 0.3px;
 }
 
 .delete-button {
@@ -92,4 +93,5 @@ button {
   cursor: pointer;
   padding: 2px;
   font-family: "Chewy";
+  letter-spacing: 0.3px;
 }
