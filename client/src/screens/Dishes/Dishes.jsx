@@ -1,12 +1,17 @@
 import Layout from "../../components/Layout/Layout";
 import Dish from "../../components/Dish/Dish";
 import Search from "../../components/Search/Search";
+import Sort from "../../components/Sort/Sort";
+import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
 import { useState, useEffect } from "react";
 import { getDishes } from "../../services/dishes";
+import "./Dishes.css";
 
 const Dishes = (props) => {
   const [dishes, setDishes] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
+  const [applySort, setApplySort] = useState(false);
+  const [sortType, setSortType] = useState("name-ascending");
 
   useEffect(() => {
     const fetchDishes = async () => {
@@ -22,17 +27,49 @@ const Dishes = (props) => {
       dish.name.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setSearchResult(results);
-    // setApplySort(true);
+    setApplySort(true);
   };
+
+  const handleSort = (type) => {
+    if (type !== "" && type !== undefined) {
+      setSortType(type);
+    }
+    switch (type) {
+      case "name-ascending":
+        setSearchResult(AZ(searchResult));
+        break;
+      case "name-descending":
+        setSearchResult(ZA(searchResult));
+        break;
+      case "price-ascending":
+        setSearchResult(lowestFirst(searchResult));
+        break;
+      case "price-descending":
+        setSearchResult(highestFirst(searchResult));
+        break;
+      default:
+        break;
+    }
+  };
+
+  if (applySort) {
+    handleSort(sortType);
+    setApplySort(false);
+  }
 
   const handleSubmit = (event) => event.preventDefault();
 
   return (
     <Layout user={props.user}>
-      <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-      <main className="dishes-container">
-        <span>Dish Page</span>
-        <div>
+      <main className="dishes-page-container">
+        <div className="category-links-container">
+          {/* filter category links go here*/}
+        </div>
+        <div className="search-sort-container">
+          <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+          <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+        </div>
+        <div className="dishes-cards-container">
           {searchResult.map((dish) => (
             <Dish
               _id={dish._id}

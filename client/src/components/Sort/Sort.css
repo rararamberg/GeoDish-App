@@ -1,0 +1,13 @@
+.sort-container label {
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.sort-container select {
+  background-color: #e1d2bb;
+  letter-spacing: 1.5px;
+}
+
+.sort-container {
+  margin: 10px;
+}
