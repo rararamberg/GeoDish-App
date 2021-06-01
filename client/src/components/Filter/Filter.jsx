@@ -1,24 +1,33 @@
 import { Link } from "react-router-dom";
+import "./Filter.css";
 
 const Filter = (props) => {
+  const handleFilter = (event) => {
+    console.log(event.target.value);
+    props.handleFilter(event.target.value);
+  };
+
   return (
-    <div className="filter-container">
-      filter feature here
+    <form className="filter-container" onSubmit={(e) => props.onSubmit(e)}>
       <div className="cuisine-links">
-        <Link>French</Link>
-        <Link>Italian</Link>
-        <Link>American</Link>
-        <Link>Indian</Link>
-        <Link>Japanese</Link>
-        <Link>Peruvian</Link>
+        <button value="french" onClick={handleFilter}>
+          French
+        </button>
+        <Link value="italian" onClick={handleFilter}>
+          Italian
+        </Link>
+        <Link value="american">American</Link>
+        <Link value="indian">Indian</Link>
+        <Link value="japanese">Japanese</Link>
+        <Link value="peruvian">Peruvian</Link>
       </div>
       <div className="meal-links">
-        <Link>Breakfast</Link>
-        <Link>Lunch</Link>
-        <Link>Dinner</Link>
-        <Link>Dessert</Link>
+        <Link value="breakfast">Breakfast</Link>
+        <Link value="lunch">Lunch</Link>
+        <Link value="dinner">Dinner</Link>
+        <Link value="dessert">Dessert</Link>
       </div>
-    </div>
+    </form>
   );
 };
 
