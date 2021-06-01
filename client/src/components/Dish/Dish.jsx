@@ -13,6 +13,8 @@ const Dish = (props) => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
+            width: "350px",
+            height: "400px",
           }}
         >
           {/* background image displayed here */}
