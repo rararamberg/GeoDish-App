@@ -1,4 +1,4 @@
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Dishes from "./screens/Dishes/Dishes";
 import DishDetail from "./screens/DishDetail/DishDetail";
 import AddDishes from "./screens/AddDishes/AddDishes";
