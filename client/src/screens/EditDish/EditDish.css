@@ -1,0 +1,19 @@
+.edit-dish-container {
+    background-color: rgb(243, 240, 235);
+}
+
+.dish-edit {
+    background-color: rgb(223, 210, 190);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
