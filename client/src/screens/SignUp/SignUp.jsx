@@ -75,13 +75,14 @@ const SignUp = (props) => {
 
   return (
     <Layout>
-      <main className="sign-up-container">
-        <h2 className="create-accoutn">CREATE ACCOUNT</h2>
+      <main className="signup-container">
         <form onSubmit={onSignUp} className="signup-form">
-          <div className="input-container">
+          <h2 className="create-account">CREATE ACCOUNT</h2>
+          <div className="signup-input-container">
             <label>Username</label>
             <input
               required
+              className="signup-input-username"
               type="text"
               name="username"
               value={username}
@@ -90,6 +91,7 @@ const SignUp = (props) => {
             <label>Email Address</label>
             <input
               required
+              className="signup-input-email"
               type="text"
               name="email"
               value={email}
@@ -98,6 +100,7 @@ const SignUp = (props) => {
             <label>Password</label>
             <input
               required
+              className="signup-input-password"
               type="password"
               name="password"
               value={password}
@@ -106,6 +109,7 @@ const SignUp = (props) => {
             <label>Confirm Password</label>
             <input
               required
+              className="signup-input-confirm"
               type="password"
               name="confirmPassword"
               value={confirmPassword}

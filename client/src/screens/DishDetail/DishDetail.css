@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.dish-detail-container {
+  display: flex;
+  padding: 3%;
+  background-color: #f4f0ea;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.dish-image {
+  width: 400px;
+  height: auto;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+.details {
+  background-color: #e1d2bb;
+  border-color: black;
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 5px 10px 10px 15px;
+  font-family: "Roboto";
+}
+
+.details-name {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.details-location {
+  margin-bottom: 20px;
+}
+
+.details-description {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.details-price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.edit-button {
+  background-color: #e1d2bb;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.edit-link-button {
+  font-size: 22px;
+  text-align: center;
+  width: 50px;
+  align-self: center;
+  background-color: #e1d2bb;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Chewy";
+  letter-spacing: 0.3px;
+}
+
+.delete-button {
+  font-size: 22px;
+  text-align: center;
+  height: 40px;
+  width: 70px;
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 40px;
+  background-color: black;
+  color: #e1d2bb;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  font-family: "Chewy";
+  letter-spacing: 0.3px;
+}
+
+@media screen and (max-width: 600px) {
+  .dish-detail-container {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-container {
+    padding-right: 0;
+    padding-bottom: 6%;
+  }
+
+  .dish-image {
+    width: 325px;
+  }
+
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6;
+  }
+
+  .details {
+    background-color: #e1d2bb;
+    border-color: black;
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 5px 10px 10px 15px;
+    font-family: "Roboto";
+  }
+
+  .details-name {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .details-location {
+    margin-bottom: 20px;
+  }
+
+  .details-description {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .details-price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* does anyone have any buttons that aren't defined that would coincide with this...? */
+  .edit-button {
+    background-color: #e1d2bb;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .edit-link-button {
+    font-size: 22px;
+    text-align: center;
+    width: 50px;
+    align-self: center;
+    /* background-color: #e1d2bb; */
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Chewy";
+    letter-spacing: 0.3px;
+  }
+
+  .delete-button {
+    font-size: 22px;
+    text-align: center;
+    height: 40px;
+    width: 70px;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: black;
+    color: #e1d2bb;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    font-family: "Chewy";
+    letter-spacing: 0.3px;
+  }
+}
