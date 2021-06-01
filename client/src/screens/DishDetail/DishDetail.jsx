@@ -41,8 +41,11 @@ const DishDetail = (props) => {
             {/* <div className="keywords">{dish.keywords}</div> */}
           </div>
           <div className="button-container">
-            <button>
-              <Link className="edit-button" to={`/dishes/${dish._id}/edit`}>
+            <button className="edit-button">
+              <Link
+                className="edit-link-button"
+                to={`/dishes/${dish._id}/edit`}
+              >
                 edit
               </Link>
             </button>
