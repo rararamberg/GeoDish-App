@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout/Layout";
 import Dish from "../../components/Dish/Dish";
+import Filter from "../../components/Filter/Filter";
 import Search from "../../components/Search/Search";
 import Sort from "../../components/Sort/Sort";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
@@ -21,6 +22,14 @@ const Dishes = (props) => {
     };
     fetchDishes();
   }, []);
+
+  const handleFilter = (type) => {
+    console.log(type);
+    // const results = dishes.filter((dish) =>
+    //   dish.keywords.includes(event.target.value)
+    //   );
+    // console.log(results)
+  };
 
   const handleSearch = (event) => {
     const results = dishes.filter((dish) =>
@@ -64,6 +73,7 @@ const Dishes = (props) => {
       <main className="dishes-page-container">
         <div className="category-links-container">
           {/* filter category links go here*/}
+          {/* <Filter onSubmit={handleSubmit} handleFilter={handleFilter} /> */}
         </div>
         <div className="search-sort-container">
           <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
