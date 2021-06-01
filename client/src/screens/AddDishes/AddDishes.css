@@ -1,0 +1,49 @@
+.form-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    line-height: 1;
+    background-color: rgb(223, 210, 190);
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .input-container {
+    display: flex;
+    justify-content: space-between; 
+    margin: 25px auto;
+} */
+
+.submit-button {
+    background-color: rgb(63, 143, 126);
+    padding: 10px 30px;
+    align-items: center;
+    width: fit-content;
+}
+
+.input-name,
+.input-location,
+.input-price,
+.textarea-description,
+.input-image-link,
+.input-restaurant-link,
+.input-keyword {
+    display: flex;
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    box-sizing: border-box;
+}

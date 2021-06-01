@@ -1,0 +1,44 @@
+.dish-card {
+  width: 350px;
+  height: 545px;
+  border: 1px solid black;
+  background-color: #e1d2bb;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.dish-card a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .dish-image {
+  width: 350px;
+  height: 400px;
+} */
+
+/* .dish-minor-info {
+  padding: 15px;
+} */
+.dish-price {
+  text-align: right;
+  padding: 5px;
+}
+
+.dish-name {
+  text-align: left;
+  padding: 0 0 5px 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dish-restaurant-name {
+  text-align: left;
+  padding: 0 0 5px 5px;
+  font-size: 18px;
+}
+
+.dish-keywords {
+  text-align: right;
+  padding: 5px;
+}

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.sign-in-container {
+  background-color: #f4f0ea;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: #e1d2bb;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5% 5% 5%;
+  line-height: 2;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto";
+  letter-spacing: 0.5px;
+  width: 97%;
+}
+
+.log-in {
+  font-size: 36px;
+  font-family: "Chewy";
+  letter-spacing: 2px;
+}
+
+.input-email {
+  border: 0;
+  height: 20px;
+}
+
+.input-password {
+  border: 0;
+  height: 20px;
+}
+
+.login-btn {
+  margin-top: 40px;
+  font-size: 22px;
+  text-align: center;
+  height: 40px;
+  width: auto;
+  align-self: center;
+  background-color: #00917d;
+  color: black;
+  cursor: pointer;
+  padding: 2px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "Chewy";
+}
+
+@media screen and (max-width: 600px) {
+  .login-form {
+    width: 75%;
+  }
+
+  .input-container {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    width: 95%;
+  }
+
+  .log-in {
+    font-size: 28px;
+  }
+
+  .login-btn {
+    font-size: 12px;
+    height: 25px;
+    width: auto;
+  }
+}

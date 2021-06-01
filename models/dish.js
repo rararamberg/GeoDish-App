@@ -5,6 +5,7 @@ const Dish = new Schema(
   {
     name: { type: String, required: true },
     restaurant: { type: String, required: true },
+    location: { type: String, required: true },
     img_url: { type: String, required: true },
     restaurant_url: { type: String, required: true },
     description: { type: String, required: true },
