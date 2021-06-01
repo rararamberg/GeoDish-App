@@ -1,0 +1,138 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+/* body {
+    background-color: rgb(243, 240, 235);
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1em;
+} */
+
+.form-container {
+    border-radius: 30px;
+    background-color: rgb(223, 210, 190);
+    display: flex;
+    flex-direction: row;
+}
+
+.page-title {
+    display: flex;
+
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+    /* padding: 1.5em; */
+}
+
+label {
+    text-align: left;
+}
+
+.input-container {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 25px auto;
+}
+
+.submit-button {
+    background-color: rgb(63, 143, 126);
+    padding: 10px 30px;
+    align-items: center;
+    width: fit-content;
+}
+
+.input-name,
+.input-location,
+.input-price,
+.textarea-description,
+.input-image-link,
+.input-restaurant-link,
+.input-keyword {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+@media (min-width: 600px) {
+
+    .input-name,
+    .input-location,
+    .input-price,
+    .textarea-description,
+    .input-image-link,
+    .input-restaurant-link,
+    .input-keyword {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: 10px;
+        margin-bottom: 25px;
+        width: 80%;
+
+    }
+
+    .title-container {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+}
+
+
+
+
+
+/* .input-name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.input-location {
+    display: block;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.input-price {
+    display: block;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.textarea-description {
+    display: block;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.input-image-link {
+    display: block;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.input-restaurant-link {
+    display: block;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.input-keyword {
+    display: block;
+    margin-bottom: 25px;
+    width: 50%;
+    border: 1px solid black;
+} */
