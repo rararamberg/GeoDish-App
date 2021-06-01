@@ -33,9 +33,10 @@ const DishDetail = (props) => {
         <div className="detail-container">
           <div className="details">
             <div className="details-name">{dish.name}</div>
-            <div className="details-restaurant">{dish.restaurant}</div>
+            <div className="details-restaurant">
+              <a href={dish.restaurant_url}>{dish.restaurant}</a>
+            </div>
             <div className="details-location">{dish.location}</div>
-            {/* <div className="restaurant-url">{dish.restaurant_url}</div> */}
             <div className="details-description">{dish.description}</div>
             <div className="details-price">${dish.price}.00</div>
             {/* <div className="keywords">{dish.keywords}</div> */}
