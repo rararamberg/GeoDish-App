@@ -19,6 +19,8 @@ nav .logo {
 
 .nav-bar {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -35,12 +37,18 @@ nav .logo {
 
 .links {
   padding: 20px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .link-welcome {
   color: #f4f0ea;
   font-style: italic;
-  margin-top: 20px;
+  text-align: right;
 }
 
 .signout-link {
@@ -60,6 +68,7 @@ nav .logo {
   color: #f4f0ea;
   font-weight: bold;
   border: 1px solid #000000;
+  vertical-align: text-bottom;
 }
 
 .signup-link:hover {
@@ -72,5 +81,12 @@ nav .logo {
   }
   .nav-bar {
     flex-direction: column;
+  }
+  .link-welcome {
+    text-align: center;
+    padding-top: 5px;
+  }
+  .links {
+    padding: 5px 0px;
   }
 }

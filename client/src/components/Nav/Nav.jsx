@@ -36,14 +36,16 @@ const Nav = ({ user }) => {
         <NavLink className="logo" to="/">
           GeoDish
         </NavLink>
-        <div className="links">
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
-          {user && <div className="link-welcome">Welcome, {user.username}</div>}
-          {/* <NavLink to="/">Dishes</NavLink>
-          <NavLink to="/add-dishes">Create Dish</NavLink>
-          <NavLink to="/sign-in">Sign In</NavLink>
+        <div className="links-welcome-container">
+          <div className="links">
+            {alwaysOptions}
+            {user ? authenticatedOptions : unauthenticatedOptions}
+            {/* <NavLink to="/">Dishes</NavLink>
+            <NavLink to="/add-dishes">Create Dish</NavLink>
+            <NavLink to="/sign-in">Sign In</NavLink>
           <NavLink to="/sign-up">Sign Up</NavLink> */}
+          </div>
+          {user && <div className="link-welcome">Welcome, {user.username}</div>}
         </div>
       </div>
     </nav>
