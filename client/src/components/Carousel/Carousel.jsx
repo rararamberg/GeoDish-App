@@ -35,11 +35,7 @@ function HomeCarousel() {
       {data.map((slide, i) => {
         return (
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={slide.image}
-              alt="slider image"
-            />
+            <img className="d-block w-100" src={slide.image} alt="slider" />
             <Carousel.Caption>
               <h3>{slide.caption}</h3>
               <p>{slide.description}</p>
