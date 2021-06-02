@@ -1,8 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import Carousel from "react-bootstrap/Carousel";
+import { useState } from "react";
 
+const data = [
+  {
+    image: "https://i.imgur.com/dVfUSAD.jpg",
+    caption: "Fish and Chips",
+    // description: "Description Here",
+  },
+  {
+    image: "https://i.imgur.com/EtqmA2U.jpg",
+    caption: "Deep Dish Pizza",
+    // description: "Description Here",
+  },
+  {
+    image: "https://i.imgur.com/ku8XTKl.jpg",
+    caption: "Shoyu Ramen",
+    // description: "Description Here",
+  },
+];
 function Landing(props) {
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <Layout user={props.user}>
       <div>
@@ -21,10 +45,25 @@ function Landing(props) {
             <Link className="btn-explore" to="/dishes">
               Explore Dishes
             </Link>
-            <div className="image-container">
-              <img src="./" alt="this is where the carousel will go" />
+            <div className="carousel-container">
+              <Carousel index={index} onSelect={handleSelect}>
+                {data.map((slide, i) => {
+                  return (
+                    <Carousel.Item>
+                      <img
+                        className="d-block w-100"
+                        src={slide.image}
+                        alt={slide.caption}
+                      />
+                      <Carousel.Caption>
+                        <h3>{slide.caption}</h3>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  );
+                })}
+              </Carousel>
             </div>{" "}
-            {/* image-container */}
+            {/* carousel-container */}
           </div>{" "}
           {/* content-container */}
         </div>{" "}
