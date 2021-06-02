@@ -1,32 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
-import Carousel from "react-bootstrap/Carousel";
-import { useState } from "react";
+import Carousel from "../../components/Carousel/Carousel";
 
-const data = [
-  {
-    image: "https://i.imgur.com/dVfUSAD.jpg",
-    caption: "Fish and Chips",
-    // description: "Description Here",
-  },
-  {
-    image: "https://i.imgur.com/EtqmA2U.jpg",
-    caption: "Deep Dish Pizza",
-    // description: "Description Here",
-  },
-  {
-    image: "https://i.imgur.com/ku8XTKl.jpg",
-    caption: "Shoyu Ramen",
-    // description: "Description Here",
-  },
-];
 function Landing(props) {
-  const [index, setIndex] = useState(0);
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
   return (
     <Layout user={props.user}>
       <div>
@@ -46,22 +23,7 @@ function Landing(props) {
               Explore Dishes
             </Link>
             <div className="carousel-container">
-              <Carousel index={index} onSelect={handleSelect}>
-                {data.map((slide, i) => {
-                  return (
-                    <Carousel.Item>
-                      <img
-                        className="d-block w-100"
-                        src={slide.image}
-                        alt={slide.caption}
-                      />
-                      <Carousel.Caption>
-                        <h3>{slide.caption}</h3>
-                      </Carousel.Caption>
-                    </Carousel.Item>
-                  );
-                })}
-              </Carousel>
+              <Carousel />
             </div>{" "}
             {/* carousel-container */}
           </div>{" "}
