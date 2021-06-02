@@ -312,7 +312,7 @@ const insertData = async () => {
       description:
         "Deliciously chewy, dense and fudgey with a rich chocolate flavor, the beloved brownies are one of the most popular American desserts.",
       price: "3",
-      keywords: ["american", "dessert"],
+      keywords: ["american", "dessert", "chocolate"],
     },
     {
       name: "Macarons",
@@ -324,7 +324,7 @@ const insertData = async () => {
       description:
         "a small, round, sweet meringue-based cookie sandwiches with filling in the middle are light and crunchy on the outside and chewy in the middle",
       price: "2",
-      keywords: ["french", "dessert"],
+      keywords: ["french", "dessert", "chocolate"],
     },
   ];
 
