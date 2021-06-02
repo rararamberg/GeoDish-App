@@ -1,31 +1,57 @@
 import { Link } from "react-router-dom";
 import "./Filter.css";
 
-const Filter = (props) => {
-  const handleFilter = (event) => {
-    console.log(event.target.value);
-    props.handleFilter(event.target.value);
+const Filter = ({ dishes, setSearchResult, handleFilter, handleSubmit }) => {
+  const filterDishes = (event) => {
+    handleFilter(event.target.value);
   };
 
   return (
-    <form className="filter-container" onSubmit={(e) => props.onSubmit(e)}>
+    <form className="filter-container" onSubmit={(e) => handleSubmit(e)}>
       <div className="cuisine-links">
-        <button value="french" onClick={handleFilter}>
+        <button value="french" onClick={filterDishes}>
           French
         </button>
-        <Link value="italian" onClick={handleFilter}>
+        <button value="english" onClick={filterDishes}>
+          English
+        </button>
+        <button value="italian" onClick={filterDishes}>
           Italian
-        </Link>
-        <Link value="american">American</Link>
-        <Link value="indian">Indian</Link>
-        <Link value="japanese">Japanese</Link>
-        <Link value="peruvian">Peruvian</Link>
+        </button>
+        <button value="american" onClick={filterDishes}>
+          American
+        </button>
+        <button value="peruvian" onClick={filterDishes}>
+          Peruvian
+        </button>
+        <button value="indian" onClick={filterDishes}>
+          Indian
+        </button>
+        <button value="japanese" onClick={filterDishes}>
+          Japanese
+        </button>
+        <button vlaue="korean" onClick={filterDishes}>
+          Korean
+        </button>
       </div>
       <div className="meal-links">
-        <Link value="breakfast">Breakfast</Link>
-        <Link value="lunch">Lunch</Link>
-        <Link value="dinner">Dinner</Link>
-        <Link value="dessert">Dessert</Link>
+        <button value="breakfast" onClick={filterDishes}>
+          Breakfast
+        </button>
+        <button value="lunch" onClick={filterDishes}>
+          Lunch
+        </button>
+        <button value="dinner" onClick={filterDishes}>
+          Dinner
+        </button>
+        <button value="dessert" onClick={filterDishes}>
+          Dessert
+        </button>
+      </div>
+      <div className="all-btn-container">
+        <button className="all-btn" onClick={() => setSearchResult(dishes)}>
+          All Dishes
+        </button>
       </div>
     </form>
   );
