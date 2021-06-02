@@ -42,6 +42,7 @@ function Landing(props) {
                 <img
                   className="icon-logo"
                   src="https://i.imgur.com/4jJMlko.png"
+                  alt="connect icon"
                 />
               </div>
               <div className="brand-container">
@@ -55,6 +56,7 @@ function Landing(props) {
                 <img
                   className="icon-logo"
                   src="https://i.imgur.com/TyXMZ0y.png"
+                  alt="explore icon"
                 />
               </div>
               <div className="brand-container">
@@ -68,6 +70,7 @@ function Landing(props) {
                 <img
                   className="icon-logo"
                   src="https://i.imgur.com/bQ3OaP2.png"
+                  alt="share icon"
                 />
               </div>
               <div className="brand-container">
