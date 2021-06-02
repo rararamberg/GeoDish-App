@@ -6,16 +6,25 @@
   padding: 5px 10px;
 }
 
-.filter-container a {
+.filter-container button {
   margin: 5px;
   text-decoration: none;
+  background-color: #f4f0ea;
   color: #3b3834;
-  font-weight: 500;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 600;
   letter-spacing: 1.5px;
+  font-size: 16px;
+  border: none;
+  transition: all 0.2s ease-in-out;
 }
 
-.filter-container a:hover {
+.filter-container button:hover {
   text-decoration: underline;
+  background-color: #3b3834;
+  color: #06dabd;
+  cursor: pointer;
 }
 
 .cuisine-links {
@@ -29,11 +38,18 @@
 }
 
 .meal-links {
-  margin: 10px 0;
+  margin: 25px 0 10px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+}
+
+.filter-container .all-btn {
+  width: fit-content;
+  background-color: #3b3834;
+  color: #f4f0ea;
+  padding: 5px 15px;
 }

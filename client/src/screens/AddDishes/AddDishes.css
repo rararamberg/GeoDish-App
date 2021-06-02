@@ -1,49 +1,125 @@
-.form-container {
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.add-dishes-container {
+    background-color: rgb(223, 210, 190);
+    margin: 55px;
+}
+
+.title-container {
     display: flex;
     flex-direction: row;
-    border-radius: 30px;
-    line-height: 1;
-    background-color: rgb(223, 210, 190);
-}
-
-.page-title {
-    display: flex;
     align-items: center;
-    margin: 50px;
+    font-family: chewy;
+    font-size: 20px;
 }
 
-.create-form {
+.add-form-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    background-color: #E1D2BB;
+}
+
+
+.create-form input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* .create-form {
     display: flex;
     flex-direction: column;
-}
-
-/* .input-container {
-    display: flex;
-    justify-content: space-between; 
-    margin: 25px auto;
 } */
 
-.submit-button {
-    background-color: rgb(63, 143, 126);
-    padding: 10px 30px;
-    align-items: center;
-    width: fit-content;
+.create-form textarea {
+    width: 82%;
 }
 
-.input-name,
-.input-location,
-.input-price,
-.textarea-description,
+.create-form label {
+    font-family: roboto;
+    font-size: 18px;
+    float: left;
+}
+
 .input-image-link,
 .input-restaurant-link,
 .input-keyword {
-    display: flex;
-
     width: 100%;
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.submit-button {
+    background-color: rgb(63, 143, 126);
+    color: black;
     padding: 12px 20px;
-    margin: 8px 0;
     border: 1px solid black;
     border-radius: 4px;
-    display: inline-block;
-    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-family: chewy;
+}
+
+
+@media(max-width:600px) {
+    .add-form-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding-right: 15px;
+    }
+
+    .input-name,
+    .input-restaurant,
+    .input-location,
+    .input-price,
+    .textarea-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        padding: 12px;
+        margin-left: 45px;
+    }
+
+    .input-image-link,
+    .input-restaurant-link,
+    .input-keyword {
+        width: 80%;
+        padding: 12px;
+        margin-left: 45px;
+    }
+
+    .submit-button {
+        background-color: rgb(63, 143, 126);
+        color: black;
+        padding: 15px 25px;
+        border: 1px solid black;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: chewy;
+        font-size: 18px;
+        text-align: center;
+        align-content: center;
+        margin-left: 95px;
+    }
+
+
 }

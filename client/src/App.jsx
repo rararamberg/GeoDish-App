@@ -6,6 +6,7 @@ import EditDish from "./screens/EditDish/EditDish";
 import SignIn from "./screens/SignIn/SignIn";
 import SignUp from "./screens/SignUp/SignUp";
 import SignOut from "./screens/Out/SignOut";
+import Landing from "./screens/Landing/Landing";
 import { verifyUser } from "./services/users";
 import { useState, useEffect } from "react";
 import "./App.css";
@@ -25,6 +26,9 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
+          <Landing user={user} />
+        </Route>
+        <Route exact path="/dishes">
           <Dishes user={user} />
         </Route>
         <Route path="/sign-up">

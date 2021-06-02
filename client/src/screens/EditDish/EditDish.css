@@ -1,19 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .edit-dish-container {
     background-color: rgb(243, 240, 235);
 }
 
 .dish-edit {
     background-color: rgb(223, 210, 190);
+    display: flex;
+    flex-direction: row;
+    margin: 55px;
 }
 
 .image-container {
     display: flex;
-    flex-direction: row;
     padding: 5%;
 }
 
-.form-container {
+.edit-dish-image {
+    width: 400px;
+    height: auto;
+}
+
+.edit-form-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+
+.input-name,
+.input-restaurant,
+.input-restaurant_url,
+.input-location,
+.textarea-description,
+.edit-input-image-link,
+.input-price,
+.input-keywords {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: roboto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.save-button {
+    background-color: rgb(63, 143, 126);
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-top: 40px;
+    font-family: chewy;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .dish-edit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-name,
+    .input-restaurant,
+    .input-restaurant_url,
+    .input-location,
+    .textarea-description,
+    .edit-input-image-link,
+    .input-price,
+    .input-keywords {
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .save-button {
+        margin-bottom: 15px;
+    }
 }
