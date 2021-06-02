@@ -24,7 +24,7 @@ const Nav = ({ user }) => {
   );
   const alwaysOptions = (
     <>
-      <NavLink className="link" to="/">
+      <NavLink className="link" to="/dishes">
         DISHES
       </NavLink>
     </>
