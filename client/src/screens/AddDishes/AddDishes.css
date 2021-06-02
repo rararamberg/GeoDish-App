@@ -1,49 +1,80 @@
-.form-container {
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.add-dishes-container {
+    background-color: rgb(223, 210, 190);
+    margin: 55px;
+}
+
+.title-container {
     display: flex;
     flex-direction: row;
-    border-radius: 30px;
-    line-height: 1;
-    background-color: rgb(223, 210, 190);
-}
-
-.page-title {
-    display: flex;
     align-items: center;
-    margin: 50px;
+    font-family: chewy;
+    font-size: 25px;
 }
 
-.create-form {
+.add-form-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    background-color: #E1D2BB;
+}
+
+.create-form input {
     display: flex;
     flex-direction: column;
-}
-
-/* .input-container {
-    display: flex;
-    justify-content: space-between; 
-    margin: 25px auto;
-} */
-
-.submit-button {
-    background-color: rgb(63, 143, 126);
-    padding: 10px 30px;
+    justify-content: flex-end;
     align-items: center;
-    width: fit-content;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
 }
 
-.input-name,
-.input-location,
-.input-price,
-.textarea-description,
+
 .input-image-link,
 .input-restaurant-link,
 .input-keyword {
-    display: flex;
-
     width: 100%;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.submit-button {
+    background-color: rgb(63, 143, 126);
+    color: black;
     padding: 12px 20px;
-    margin: 8px 0;
     border: 1px solid black;
     border-radius: 4px;
-    display: inline-block;
-    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-family: chewy;
+}
+
+
+@media(max-width:600px) {
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 15px;
+    }
+
+    .input-name {
+        width: 50%;
+        padding: 12px;
+    }
+
+    .input-image-link,
+    .input-restaurant-link,
+    .input-keyword {
+        width: 80%;
+        padding: 12px;
+    }
 }

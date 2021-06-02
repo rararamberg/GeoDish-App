@@ -1,11 +1,11 @@
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Dishes from "./screens/Dishes/Dishes";
 import DishDetail from "./screens/DishDetail/DishDetail";
 import AddDishes from "./screens/AddDishes/AddDishes";
 import EditDish from "./screens/EditDish/EditDish";
 import SignIn from "./screens/SignIn/SignIn";
 import SignUp from "./screens/SignUp/SignUp";
-import SignOut from "./screens/SignOut/SignOut";
+import SignOut from "./screens/Out/SignOut";
 import { verifyUser } from "./services/users";
 import { useState, useEffect } from "react";
 import "./App.css";

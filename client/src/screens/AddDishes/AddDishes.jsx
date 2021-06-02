@@ -39,89 +39,91 @@ const AddDishes = (props) => {
   return (
     <Layout user={props.user}>
       <main className="add-dishes-container">
-        <div className="form-container">
-        <div className="title-container">
-          <h1 className="page-title">Add your dish here!</h1>
-        </div>
+        <div className="add-form-container">
+          <div className="title-container">
+            <h1>Add your dish here!</h1>
+          </div>
           <form className="create-form" onSubmit={handleSubmit}>
-            <div className="input-container">
-              <label htmlFor="name">Name</label>
-              <input
-                className="input-name"
-                placeholder="Name"
-                value={dish.name}
-                name="name"
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label htmlFor="">Restaurant Name</label>
-              <input
-                className="input-name"
-                placeholder="Restaurant"
-                value={dish.restaurant}
-                name="restaurant"
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label htmlFor="">Region/genre</label>
-              <input
-                className="input-location"
-                placeholder="Location"
-                value={dish.location}
-                name="location"
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-              <label htmlFor="">Price</label>
-              <input
-                className="input-price"
-                placeholder="Price"
-                value={dish.price}
-                name="price"
-                required
-                onChange={handleChange}
-              />
-              <label htmlFor="">Dish Details</label>
-              <textarea
-                className="textarea-description"
-                rows={10}
-                placeholder="Description"
-                value={dish.description}
-                name="description"
-                required
-                onChange={handleChange}
-              />
-              <label htmlFor="">Image Link</label>
-              <input
-                className="input-image-link"
-                placeholder="Image Link"
-                value={dish.img_url}
-                name="img_url"
-                required
-                onChange={handleChange}
-              />
-              <label htmlFor="">Restaurant Link</label>
-              <input
-                className="input-restaurant-link"
-                placeholder="Restaurant Link"
-                value={dish.restaurant_url}
-                name="restaurant_url"
-                required
-                onChange={handleChange}
-              />
-              <label htmlFor="">Keywords</label>
-              <input
-                className="input-keyword"
-                placeholder="Keywords"
-                value={dish.keywords}
-                name="keywords"
-                required
-                onChange={handleChange}
-              />
-            </div>
+            <label htmlFor="name" className="label-name">
+              Name
+            </label>
+            <input
+              className="input-name"
+              placeholder="Name"
+              value={dish.name}
+              name="name"
+              required
+              autoFocus
+              onChange={handleChange}
+            />
+            <label htmlFor="restaurant" className="label-restaurant">
+              Restaurant Name
+            </label>
+            <input
+              className="input-restaurant"
+              placeholder="Restaurant"
+              value={dish.restaurant}
+              name="restaurant"
+              required
+              autoFocus
+              onChange={handleChange}
+            />
+            <label htmlFor="">Region/genre</label>
+            <input
+              className="input-location"
+              placeholder="Location"
+              value={dish.location}
+              name="location"
+              required
+              autoFocus
+              onChange={handleChange}
+            />
+            <label htmlFor="">Price</label>
+            <input
+              className="input-price"
+              placeholder="Price"
+              value={dish.price}
+              name="price"
+              required
+              onChange={handleChange}
+            />
+            <label htmlFor="">Dish Details</label>
+            <textarea
+              className="textarea-description"
+              rows={10}
+              placeholder="Description"
+              value={dish.description}
+              name="description"
+              required
+              onChange={handleChange}
+            />
+            <label htmlFor="">Image Link</label>
+            <input
+              className="input-image-link"
+              placeholder="Image Link"
+              value={dish.img_url}
+              name="img_url"
+              required
+              onChange={handleChange}
+            />
+            <label htmlFor="">Restaurant Link</label>
+            <input
+              className="input-restaurant-link"
+              placeholder="Restaurant Link"
+              value={dish.restaurant_url}
+              name="restaurant_url"
+              required
+              onChange={handleChange}
+            />
+            <label htmlFor="">Keywords</label>
+            <input
+              className="input-keyword"
+              placeholder="Keywords"
+              value={dish.keywords}
+              name="keywords"
+              required
+              onChange={handleChange}
+            />
             <button type="submit" className="submit-button">
               Submit
             </button>
