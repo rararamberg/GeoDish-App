@@ -241,6 +241,91 @@ const insertData = async () => {
       price: "12",
       keywords: ["french", "lunch"],
     },
+    {
+      name: "Full English Breakfast",
+      restaurant: "The Churchill Tavern",
+      location: "New York, NY, USA",
+      img_url:
+        "https://images.unsplash.com/photo-1563636247809-c76f873625ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1320&q=80",
+      restaurant_url: "https://www.thechurchillny.com/",
+      description:
+        "the heartiest of breakfasts with bacon, sausage, baked beans, eggs, mushrooms, grilled tomatoes, and toast. ",
+      price: "14",
+      keywords: ["english", "breakfast"],
+    },
+    {
+      name: "Crumpets",
+      restaurant: "Holy Crumpets & Coffee",
+      location: "Melbourne, Victoria, Australia",
+      img_url:
+        "https://culinaryginger.com/wp-content/uploads/English-crumpets-23-720x720.jpg",
+      restaurant_url: "https://holycrumpets.com.au/",
+      description:
+        "Not quite a cake. Not quite a pancake, either. Not a slice of toast, and not an English muffin. It's sort of what you'd get if all those delightful breakfast foods birthed a hybrid: a beautiful, thick round that holds as much love in its tiny holes as it does melted butter. Made from as little as four ingredients, crumpets may just be the ultimate comfort food ",
+      price: "5",
+      keywords: ["english", "breakfast"],
+    },
+    {
+      name: "Signature Nova",
+      restaurant: "Ess-a-Bagel",
+      location: "New York, NY, USA",
+      img_url:
+        "https://www.thespruceeats.com/thmb/s8uteEkdxmW0XIb41sHGLNJb_6M=/2000x1125/smart/filters:no_upscale()/open-face-smoked-salmon-bagel-101094-hero-01-ea26c2ca36af4577b1d40e0af807754b.jpg",
+      restaurant_url: "https://www.ess-a-bagel.com/",
+      description:
+        "slices of nova on a bagel with scallion cream cheese, freshly-sliced tomato, lettuce, onions + capers",
+      price: "15",
+      keywords: ["american", "breakfast"],
+    },
+    {
+      name: "Pain au Chocolat",
+      restaurant: "Du Pain et Des Idées",
+      location: "Paris, France",
+      img_url:
+        "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80",
+      restaurant_url: "http://www.dupainetdesidees.com/",
+      description:
+        "one of the best known French pastries, try a viennoiserie sweet roll consisting of  one or two pieces of dark chocolate in the center",
+      price: "3",
+      keywords: ["french", "breakfast"],
+    },
+    {
+      name: "Mame daifuku",
+      restaurant: "Demachi Futaba",
+      location: "Kyoto, Japan",
+      img_url:
+        "https://cdn.tasteatlas.com/images/dishes/e94ffe0aee024aa58350eeb2cb1676b6.jpg?mw=1300",
+      restaurant_url:
+        "https://www.google.com/maps/place/Demachi+Futaba/@35.0301043,135.7674296,17z/data=!3m2!4b1!5s0x600108686df30c0d:0x7be636d4489e8ab7!4m5!3m4!1s0x6001086871ffa623:0x5b5854ee646ac567!8m2!3d35.0300999!4d135.7696183",
+      description:
+        "a wagashi consisting of sweet, pink-colored rice cake with a red bean paste center and wrapped in a pickled cherry blossom leaf.",
+      price: "3",
+      keywords: ["japanese", "dessert"],
+    },
+    {
+      name: "Brownies",
+      restaurant: "Baked",
+      location: "New York, NY, USA",
+      img_url:
+        "https://images.unsplash.com/photo-1610611424854-5e07032143d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      restaurant_url: "https://bakednyc.com/",
+      description:
+        "Deliciously chewy, dense and fudgey with a rich chocolate flavor, the beloved brownies are one of the most popular American desserts.",
+      price: "3",
+      keywords: ["american", "dessert", "chocolate"],
+    },
+    {
+      name: "Macarons",
+      restaurant: "Ladurée",
+      location: "Paris, France",
+      img_url:
+        "https://cdn.tasteatlas.com/images/dishes/bff77c0b5fe34398a03b9a436815fad2.jpg?mw=1300",
+      restaurant_url: "https://www.laduree.fr/en/laduree-paris-royale.html",
+      description:
+        "a small, round, sweet meringue-based cookie sandwiches with filling in the middle are light and crunchy on the outside and chewy in the middle",
+      price: "2",
+      keywords: ["french", "dessert", "chocolate"],
+    },
   ];
 
   // insert dishes into database
