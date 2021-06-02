@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import Carousel from "../../components/Carousel/Carousel";
+import "./Landing.css";
 
 function Landing(props) {
   return (
@@ -21,10 +23,10 @@ function Landing(props) {
             <Link className="btn-explore" to="/dishes">
               Explore Dishes
             </Link>
-            <div className="image-container">
-              <img src="./" alt="this is where the carousel will go" />
+            <div className="carousel-container">
+              <Carousel />
             </div>{" "}
-            {/* image-container */}
+            {/* carousel-container */}
           </div>{" "}
           {/* content-container */}
         </div>{" "}
@@ -33,8 +35,9 @@ function Landing(props) {
           <div className="brand-container">
             <div className="brand-statement">
               To be human is to experience food.
-            </div>
-            <div className="branding-container">
+            </div>{" "}
+            {/* brand-statement */}
+            <div className="brand-icon-container">
               <div className="icon-container">
                 <img
                   className="icon-logo"
@@ -45,7 +48,34 @@ function Landing(props) {
                 <h5>Connect.</h5>
                 <p className="brand-substatement">statement 1</p>
               </div>
-            </div>
+            </div>{" "}
+            {/* brand-icon-container */}
+            <div className="brand-icon-container">
+              <div className="icon-container">
+                <img
+                  className="icon-logo"
+                  src="https://i.imgur.com/TyXMZ0y.png"
+                />
+              </div>
+              <div className="brand-container">
+                <h5>Explore.</h5>
+                <p className="brand-substatement">statement 2</p>
+              </div>
+            </div>{" "}
+            {/* brand-icon-container */}
+            <div className="brand-icon-container">
+              <div className="icon-container">
+                <img
+                  className="icon-logo"
+                  src="https://i.imgur.com/bQ3OaP2.png"
+                />
+              </div>
+              <div className="brand-container">
+                <h5>Share.</h5>
+                <p className="brand-substatement">statement 3</p>
+              </div>
+            </div>{" "}
+            {/* brand-icon-container */}
           </div>{" "}
           {/* brand-container */}
         </section>
