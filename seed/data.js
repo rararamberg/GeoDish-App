@@ -80,7 +80,8 @@ const insertData = async () => {
       name: "30 Day Dry Aged Ribeye",
       restaurant: "Bavette's Bar and Beouf",
       location: "Chicago, IL, USA",
-      img_url: "https://unsplash.com/photos/NYBnDWeOX2c",
+      img_url:
+        "https://media.lasvegasmagazine.com/media/img/photos/2020/10/12/Bavettes_Steakhouse_and_Bar_cr_Peter_Harasty_LD_t1024.jpg?b3f067808e872500b33dd7ef4ee517933144b05a",
       restaurant_url: "https://bavettessteakhouse.com/chicago/",
       description:
         "A stylish departure from a traditional steakhouse, Bavette's embraces French flair without the formality, blending fine dining with unabashed fun.",
@@ -110,6 +111,135 @@ const insertData = async () => {
         "Lomo saltado is a popular, traditional Peruvian dish, a stir fry that typically combines marinated strips of sirloin (or other beef steak) with onions, tomatoes, french fries, and other ingredients; and is typically served with rice. The dish originated as part of the chifa tradition, the Chinese cuisine of Peru, though its popularity has made it part of the mainstream culture.",
       price: "70",
       keywords: ["beef", "lunch", "peruvian", "dinner"],
+    },
+    {
+      name: "Fish and Chips",
+      restaurant: "The Cod's Scallops",
+      location: "Nottingham, London, UK",
+      img_url: "https://i.imgur.com/dVfUSAD.jpg",
+      restaurant_url: "https://www.codsscallops.com/",
+      description:
+        "Fish is deep fried in a non-hydrogenated vegetable oil, BBQ spiced or baked with garlic, lemon & herbs. Served with chips",
+      price: "12",
+      keywords: ["lunch", "english"],
+    },
+    {
+      name: "House Special Ramen",
+      restaurant: "Fu-Unji",
+      location: "Shibuya, Tokyo, JP",
+      img_url: "https://i.imgur.com/ku8XTKl.jpg",
+      restaurant_url: "http://www.fu-unji.com/index.html",
+      description:
+        "The signature shouyu ramen is made from three types of soup stock – pork broth, wa-dashi (Japanese stock) and hamaguri clam dashi – and topped with truffle sauce as well as porcini oil and flakes for that bold umami punch. Enjoy with nori, tender pork, poached egg, topped with scallions.",
+      price: "16",
+      keywords: ["lunch", "dinner", "japanese"],
+    },
+    {
+      name: "Samosa",
+      restaurant: "Sindhu Sweets",
+      location: "Khar, Mumbai, IN",
+      img_url: "https://i.imgur.com/xxPaiPP.jpg",
+      restaurant_url: "https://www.zomato.com/mumbai/sindhu-sweets-khar",
+      description:
+        "Fried, flakey pastry with a savory filling.  Spiced potatoes, onions, peas, and lentils. Served with mint and tamarind chutney.",
+      price: "5",
+      keywords: ["lunch", "indian"],
+    },
+    {
+      name: "Soupe à l'oignon",
+      restaurant: "Le Gabriel",
+      location: "Paris, France",
+      img_url:
+        "https://www.expatica.com/app/uploads/sites/5/2020/03/French-onion-soup.jpg",
+      restaurant_url:
+        "https://www.lareserve-paris.com/en/restaurants-bars/restaurant-le-gabriel/",
+      description:
+        "French onion soup is nowadays regarded as one of the most prized dishes of French cuisine. The broth is simple, made merely with caramelized onions and meat stock. However, the soup is distinguished by croûtes–pieces of crispy baked bread that are placed on top of the soup and are then generously covered with cheese.",
+      price: "40",
+      keywords: ["beef", "cheese", "lunch", "french", "dinner", "soup"],
+    },
+    {
+      name: "Seco de Cordero",
+      restaurant: "El Bodegon",
+      location: "Miraflores, Lima, Peru",
+      img_url:
+        "https://www.peruforless.com/blog/wp-content/uploads/2013/11/seco-de-carne.jpg",
+      restaurant_url: "https://www.elbodegon.com.pe/",
+      description:
+        "Seco de Cordero is a delicious Peruvian lamb stew. Seasoned with aji peppers, cumin, and lots of cilantro, the lamb is braised in beer until its tender and flavorful. Yellow potatoes cook at the same time and soak up all the great flavor.",
+      price: "60",
+      keywords: ["beef", "lunch", "peruvian", "dinner"],
+    },
+    {
+      name: "Anticuchos",
+      restaurant: "Tanta",
+      location: "San Isidro, Lima Peru",
+      img_url:
+        "https://www.peruforless.com/blog/wp-content/uploads/2013/11/anticuchos-1.jpg",
+      restaurant_url: "http://tantaperu.com/",
+      description:
+        "The most traditional Peruvian anticuchos are made of beef heart, but marinated chicken (anticuchos de pollo) or steak anticuchos are also popular.",
+      price: "40",
+      keywords: ["beef", "lunch", "peruvian", "dinner"],
+    },
+    {
+      name: "Hakata Ramen",
+      restaurant: "Yataiya Hakatagekijo",
+      location: "Bunyo, Tokyo, Japan",
+      img_url:
+        "https://cdn.tasteatlas.com/images/dishes/3d163d1d3eb042e3ba04f51022b09f2a.jpg?w=905&h=510",
+      restaurant_url: "https://www.ikkadining.co.jp/",
+      description:
+        "Hailing from Fukuoka, hakata is one of the most famous ramen styles in Japan. The base of the ramen is tonkotsu, the creamy pork bone broth which gives the dish its incredibly rich and layered taste. It is often only seasoned with shio (salt), and occasionally with shoyu (soy sauce) and miso (fermented soybean) paste.",
+      price: "30",
+      keywords: ["soup", "lunch", "japanese", "dinner"],
+    },
+    {
+      name: "Shio Ramen",
+      restaurant: "Douzo",
+      location: ", Tokyo, Japan",
+      img_url:
+        "https://i8b2m3d9.stackpathcdn.com/wp-content/uploads/2017/09/Ramen_0485a.jpg",
+      restaurant_url: "https://douzosushi.com/",
+      description:
+        "Shio ramen is one of the four main flavor-based ramen categories. Like other ramen varieties, it combines three crucial elements: flavorful broth, noodles, and various toppings.",
+      price: "30",
+      keywords: ["soup", "lunch", "japanese", "dinner"],
+    },
+    {
+      name: "Cannoli",
+      restaurant: "D'Amato's Bakery",
+      location: "Chicago, IL, USA",
+      img_url:
+        "https://damatoschicago.com/wp-content/uploads/2017/10/damatos-bakery-twocanolis.jpg",
+      restaurant_url: "https://damatoschicago.com/",
+      description:
+        "Selling up to 1,000 of these a week, there is a reason we are one of the best in the U.S. A true staple of Sicilian cuisine, cannolis are freshly made shells of fried pastry dough and filled with sweet, creamy ricotta.",
+      price: "3.50",
+      keywords: ["italian", "dessert"],
+    },
+    {
+      name: "Spaghetti",
+      restaurant: "Aromi",
+      location: "Prague, Czech Republic",
+      img_url: "https://aromi.lacollezione.cz/files/aromijarnimenu43.jpg",
+      restaurant_url: "https://aromi.lacollezione.cz/en",
+      description:
+        "A classic dish featuring our love for seafood, this spaghetti comes with clams and lightly smoked tomatoes.",
+      price: "33.50",
+      keywords: ["italian", "dinner"],
+    },
+    {
+      name: "Bouillabaisse",
+      restaurant: "Le Petit Nice",
+      location: "Marseille, Provence, France",
+      img_url:
+        "https://cdn.tasteatlas.com/Images/DishRestaurants/4063ea8eeb6d4cffbd2e7b08f7366cc3.jpg?mw=1300",
+      restaurant_url: "http://www.passedat.fr/en/#!le-petit-nice",
+      description:
+        "a traditional Provençal fish stew originating from the port city of Marseille. Rich and spicy with key flavors of floral saffron, fennel, and orange zest ",
+      price: "12",
+      keywords: ["french", "lunch"],
     },
   ];
 
