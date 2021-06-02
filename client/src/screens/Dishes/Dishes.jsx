@@ -78,7 +78,12 @@ const Dishes = (props) => {
       <main className="dishes-page-container">
         <div className="category-links-container">
           {/* filter category links go here*/}
-          <Filter onSubmit={handleSubmit} handleFilter={handleFilter} />
+          <Filter
+            handleSubmit={handleSubmit}
+            handleFilter={handleFilter}
+            dishes={dishes}
+            setSearchResult={setSearchResult}
+          />
         </div>
         <div className="search-sort-container">
           <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
