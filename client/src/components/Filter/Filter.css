@@ -6,15 +6,16 @@
   padding: 5px 10px;
 }
 
-.filter-container a {
+.filter-container button {
   margin: 5px;
   text-decoration: none;
   color: #3b3834;
   font-weight: 500;
   letter-spacing: 1.5px;
+  font-size: 16px;
 }
 
-.filter-container a:hover {
+.filter-container button:hover {
   text-decoration: underline;
 }
 

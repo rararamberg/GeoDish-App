@@ -3,7 +3,6 @@ import "./Filter.css";
 
 const Filter = (props) => {
   const handleFilter = (event) => {
-    console.log(event.target.value);
     props.handleFilter(event.target.value);
   };
 
@@ -13,19 +12,35 @@ const Filter = (props) => {
         <button value="french" onClick={handleFilter}>
           French
         </button>
-        <Link value="italian" onClick={handleFilter}>
+        <button value="italian" onClick={handleFilter}>
           Italian
-        </Link>
-        <Link value="american">American</Link>
-        <Link value="indian">Indian</Link>
-        <Link value="japanese">Japanese</Link>
-        <Link value="peruvian">Peruvian</Link>
+        </button>
+        <button value="american" onClick={handleFilter}>
+          American
+        </button>
+        <button value="indian" onClick={handleFilter}>
+          Indian
+        </button>
+        <button value="japanese" onClick={handleFilter}>
+          Japanese
+        </button>
+        <button value="peruvian" onClick={handleFilter}>
+          Peruvian
+        </button>
       </div>
       <div className="meal-links">
-        <Link value="breakfast">Breakfast</Link>
-        <Link value="lunch">Lunch</Link>
-        <Link value="dinner">Dinner</Link>
-        <Link value="dessert">Dessert</Link>
+        <button value="breakfast" onClick={handleFilter}>
+          Breakfast
+        </button>
+        <button value="lunch" onClick={handleFilter}>
+          Lunch
+        </button>
+        <button value="dinner" onClick={handleFilter}>
+          Dinner
+        </button>
+        <button value="dessert" onClick={handleFilter}>
+          Dessert
+        </button>
       </div>
     </form>
   );
