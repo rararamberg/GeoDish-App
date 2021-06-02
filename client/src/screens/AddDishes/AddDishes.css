@@ -11,7 +11,7 @@
     flex-direction: row;
     align-items: center;
     font-family: chewy;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .add-form-container {
@@ -19,22 +19,38 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     align-content: space-between;
     background-color: #E1D2BB;
 }
 
+
 .create-form input {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
+/* .create-form {
+    display: flex;
+    flex-direction: column;
+} */
+
+.create-form textarea {
+    width: 82%;
+}
+
+.create-form label {
+    font-family: roboto;
+    font-size: 18px;
+    float: left;
+}
 
 .input-image-link,
 .input-restaurant-link,
@@ -42,6 +58,7 @@
     width: 100%;
     padding: 12px;
     border-radius: 3px;
+    border: 1px solid black;
 }
 
 .submit-button {
@@ -51,7 +68,6 @@
     border: 1px solid black;
     border-radius: 4px;
     cursor: pointer;
-    float: left;
     margin-top: 40px;
     margin-bottom: 25px;
     font-family: chewy;
@@ -59,16 +75,28 @@
 
 
 @media(max-width:600px) {
-    .form-container {
+    .add-form-container {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+        align-content: center;
+        align-items: center;
         padding-right: 15px;
     }
 
-    .input-name {
-        width: 50%;
+    .input-name,
+    .input-restaurant,
+    .input-location,
+    .input-price,
+    .textarea-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
         padding: 12px;
+        margin-left: 45px;
     }
 
     .input-image-link,
@@ -76,5 +104,22 @@
     .input-keyword {
         width: 80%;
         padding: 12px;
+        margin-left: 45px;
     }
+
+    .submit-button {
+        background-color: rgb(63, 143, 126);
+        color: black;
+        padding: 15px 25px;
+        border: 1px solid black;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: chewy;
+        font-size: 18px;
+        text-align: center;
+        align-content: center;
+        margin-left: 95px;
+    }
+
+
 }
