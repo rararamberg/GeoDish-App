@@ -47,7 +47,7 @@ const insertData = async () => {
       restaurant: "Bukhara",
       location: "New Dehli, India",
       img_url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh01JQeOW9A8KSc7jIZOA3S2zTbdGw5UAREKtcwHDt7G9MmZIFYyJ4k0qy5Rd4S7LbBFw&usqp=CAU",
+        "http://maunikagowardhan.co.uk/wp-content/uploads/2018/08/Raan-Musallum-1024x683.jpg",
       restaurant_url: "https://www.bukharabistro.com/",
       description:
         "Whole leg of spring lamb, braised in a marinade of malt vinegar, cinnamon and black cumin braised in the marinade, skewered and then finished in the tandoor. To say the least, one of the greatest mouth-watering dishes you will ever have.",
