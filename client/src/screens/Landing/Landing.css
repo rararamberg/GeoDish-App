@@ -1,8 +1,156 @@
 .landing-container {
   display: flex;
-  background-color: white;
+  flex-direction: column;
+  margin: 25px;
+  /* background-color: white; */
+}
+
+.content-container h1 h6 {
+  color: #3b3834;
+}
+
+.content-container h1 {
+  font-size: 48px;
+  letter-spacing: 1.5px;
+}
+
+.content-container h6 {
+  line-height: 1.5;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 300px;
+}
+
+.btn-explore {
+  font-size: 22px;
+  text-align: center;
+  height: 40px;
+  width: 145px;
+  align-self: left;
+  margin-top: 10px;
+  margin-left: 40px;
+  background-color: #00917d;
+  color: #3b3834;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  font-family: "Chewy";
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.content-image img {
+  width: 600px;
+  margin-left: 100px;
 }
 
 .carousel-container {
+  display: flex;
+  flex-direction: row;
   width: 350px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  margin-left: 33%;
+}
+
+.carousel {
+  display: flex;
+}
+
+.brand {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.main-brand-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.brand-statement {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 1px solid black;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.icon-container {
+  padding-bottom: 30px;
+}
+
+.brand-title {
+  font-size: 24px;
+}
+
+/* .brand-icon-container {
+  display: flex;
+  width: 200px;
+} */
+
+.brand-substatement {
+  padding-top: 20px;
+  font-size: 12px;
+  width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .content-container {
+    flex-direction: column-reverse;
+  }
+
+  .content-image img {
+    display: flex;
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 15%;
+  }
+
+  .content-text {
+    width: auto;
+  }
+
+  .btn-explore {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .carousel-container {
+    margin-left: 18%;
+  }
+
+  .brand-statement {
+    font-size: 28px;
+  }
+
+  .main-brand-icon-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    margin-top: 40px;
+  }
+
+  .brand-substatement {
+    margin-left: 31%;
+  }
+
+  .brand-icon-container {
+    margin-top: 15px;
+  }
 }
