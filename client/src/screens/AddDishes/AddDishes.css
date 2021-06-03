@@ -50,21 +50,26 @@
 .input-restaurant-link,
 .input-keyword {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border-radius: 3px;
     border: 1px solid black;
+}
+
+.textarea-description {
+    width: 80%;
 }
 
 .submit-button {
     background-color: rgb(63, 143, 126);
     color: black;
-    padding: 12px 20px;
+    padding: 15px 40px;
     border: 1px solid black;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 40px;
     margin-bottom: 25px;
     font-family: chewy;
+    font-size: 18px;
 }
 
 @media(max-width:600px) {
@@ -78,26 +83,39 @@
         padding-right: 15px;
     }
 
-    .input-name,
-    .input-restaurant,
-    .input-location,
-    .input-price,
-    .textarea-description {
+    .create-form input,
+    textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 20%;
+        width: 80%;
         padding: 12px;
-        margin-left: 45px;
+        margin: 10px 0;
     }
 
+    /* .input-name,
+    .input-restaurant,
+    .input-location,
+    .input-price {} */
+
+    /* .textarea-description {
+        width: 70%;
+        margin: 0;
+    } */
+    /* 
     .input-image-link,
     .input-restaurant-link,
     .input-keyword {
-        width: 80%;
-        padding: 12px;
-        margin-left: 45px;
+        width: 220%;
+        padding: 100px;
+        margin-left: 25px;
+        margin-bottom: 15px;
+    } */
+
+
+    .create-form label {
+        display: none;
     }
 
     .submit-button {
@@ -111,6 +129,6 @@
         font-size: 18px;
         text-align: center;
         align-content: center;
-        margin-left: 95px;
+        margin-left: 35px;
     }
 }
