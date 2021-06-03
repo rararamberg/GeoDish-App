@@ -23,14 +23,20 @@ function Landing(props) {
             <Link className="btn-explore" to="/dishes">
               Explore Dishes
             </Link>
-            <div className="carousel-container">
-              <Carousel />
-            </div>{" "}
-            {/* carousel-container */}
+            <div className="content-image">
+              <img
+                src="https://i.imgur.com/o1yJG73.png"
+                alt="around the world"
+              />
+            </div>
           </div>{" "}
           {/* content-container */}
         </div>{" "}
         {/* landing-container */}
+        <div className="carousel-container">
+          <Carousel />
+        </div>{" "}
+        {/* carousel-container */}
         <section className="brand">
           <div className="brand-container">
             <div className="brand-statement">
