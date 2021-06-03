@@ -41,11 +41,9 @@ function App() {
           <SignOut setUser={setUser} />
         </Route>
         <Route path="/add-dish">
-          <AddDishes user={user} />
           {user ? <AddDishes user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/dishes/:id/edit">
-          <EditDish user={user} />
           {user ? <EditDish user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/dishes/:id">
