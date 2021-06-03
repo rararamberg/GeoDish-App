@@ -47,7 +47,7 @@ const insertData = async () => {
       restaurant: "Bukhara",
       location: "New Dehli, India",
       img_url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh01JQeOW9A8KSc7jIZOA3S2zTbdGw5UAREKtcwHDt7G9MmZIFYyJ4k0qy5Rd4S7LbBFw&usqp=CAU",
+        "http://maunikagowardhan.co.uk/wp-content/uploads/2018/08/Raan-Musallum-1024x683.jpg",
       restaurant_url: "https://www.bukharabistro.com/",
       description:
         "Whole leg of spring lamb, braised in a marinade of malt vinegar, cinnamon and black cumin braised in the marinade, skewered and then finished in the tandoor. To say the least, one of the greatest mouth-watering dishes you will ever have.",
@@ -270,7 +270,7 @@ const insertData = async () => {
       restaurant: "Ess-a-Bagel",
       location: "New York, NY, USA",
       img_url:
-        "https://www.thespruceeats.com/thmb/s8uteEkdxmW0XIb41sHGLNJb_6M=/2000x1125/smart/filters:no_upscale()/open-face-smoked-salmon-bagel-101094-hero-01-ea26c2ca36af4577b1d40e0af807754b.jpg",
+        "https://images.unsplash.com/photo-1492016775777-ed98c058f826?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
       restaurant_url: "https://www.ess-a-bagel.com/",
       description:
         "slices of nova on a bagel with scallion cream cheese, freshly-sliced tomato, lettuce, onions + capers",
