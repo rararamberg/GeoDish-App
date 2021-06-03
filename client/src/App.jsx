@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Dishes from "./screens/Dishes/Dishes";
 import DishDetail from "./screens/DishDetail/DishDetail";
 import AddDishes from "./screens/AddDishes/AddDishes";
@@ -42,11 +42,11 @@ function App() {
         </Route>
         <Route path="/add-dish">
           <AddDishes user={user} />
-          {/* {user ? <AddDishes user={user} /> : <Redirect to="/sign-up" />} */}
+          {user ? <AddDishes user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/dishes/:id/edit">
           <EditDish user={user} />
-          {/* {user ? <EditDish user={user} /> : <Redirect to="/" />} */}
+          {user ? <EditDish user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/dishes/:id">
           <DishDetail user={user} />
