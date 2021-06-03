@@ -13,8 +13,10 @@ const Dish = (props) => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            width: "350px",
+            width: "348px",
             height: "400px",
+            borderTopRightRadius: "5px",
+            borderTopLeftRadius: "5px",
           }}
         >
           {/* background image displayed here */}
@@ -23,7 +25,7 @@ const Dish = (props) => {
           <div className="dish-price">$ {props.price}</div>
           <div className="dish-name">{props.name}</div>
           <div className="dish-restaurant-name">{props.restaurant}</div>
-          <div className="dish-keywords">{props.keywords}</div>
+          <div className="dish-keywords">{props.keywords.join(", ")}</div>
         </div>
       </Link>
     </div>
