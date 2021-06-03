@@ -55,17 +55,6 @@ const insertData = async () => {
       keywords: ["dinner", "indian"],
     },
     {
-      name: "Banchan Medley",
-      restaurant: "Jiwhaja",
-      location: "Seoul, Korea",
-      img_url: "https://i.imgur.com/GvwfAPa.jpg",
-      restaurant_url: "http://www.jihwajafood.co.kr/eng/",
-      description:
-        "Jihwaja as the best dining place in Seoul is willing to be a space where you can taste and feel the Korean food's essence and best food culture that royal food has.",
-      price: "30",
-      keywords: ["lunch", "dinner", "korean"],
-    },
-    {
       name: "Detroit Deep Dish Pizza",
       restaurant: "Buddy's Pizza",
       location: "Detroit, MI, USA",
