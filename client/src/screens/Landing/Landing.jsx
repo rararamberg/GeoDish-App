@@ -10,10 +10,12 @@ function Landing(props) {
       <div className="landing-container">
         <div className="content-container">
           <div className="content-text">
-            <h1>Are </h1>
-            <h1>You Hungry?</h1>
+            <div className="heading-container">
+              <h1>Are </h1>
+              <h1>You Hungry?</h1>
+            </div>
             <br />
-            <h6 className="bold-four">
+            <h6 className="heading-statement">
               This is a space created for those that are apart of the restaurant
               industry to share their most iconic dishes. Connect with the
               hungry people and let them experience your craft. So... Are you
@@ -24,15 +26,20 @@ function Landing(props) {
               Explore Dishes
             </Link>
           </div>
-          <div className="content-image">
-            <img src="https://i.imgur.com/o1yJG73.png" alt="around the world" />
+          <div className="carousel-container">
+            <Carousel className="carousel" />
           </div>
+          {/* <div className="content-image">
+            <img src="https://i.imgur.com/o1yJG73.png" alt="around the world" />
+          </div> */}
         </div>{" "}
         {/* content-container */}
-        <div className="carousel-container">
+        {/* <div className="content-image">
+          <img src="https://i.imgur.com/o1yJG73.png" alt="around the world" />
+        </div> */}
+        {/* <div className="carousel-container">
           <Carousel className="carousel" />
-        </div>{" "}
-        {/* carousel-container */}
+        </div> */}
         <section className="brand">
           <div className="brand-container">
             <div className="brand-statement">
