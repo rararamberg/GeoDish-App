@@ -75,26 +75,30 @@ const SignIn = (props) => {
         <form onSubmit={onSignIn} className="login-form">
           <h2 className="log-in">LOG IN</h2>
           <div className="input-container">
-            <label>Email Address</label>
-            <input
-              required
-              className="input-email"
-              type="text"
-              name="email"
-              value={email}
-              onChange={handleChange}
-              placeholder="your-email@mailsite.com"
-            />
-            <label>Password</label>
-            <input
-              required
-              className="input-password"
-              type="password"
-              name="password"
-              value={password}
-              onChange={handleChange}
-              placeholder="your-password"
-            />
+            <div className="label-input-container">
+              <label>Email Address</label>
+              <input
+                required
+                className="input-email"
+                type="text"
+                name="email"
+                value={email}
+                onChange={handleChange}
+                placeholder="your-email@mailsite.com"
+              />
+            </div>
+            <div className="label-input-container">
+              <label>Password</label>
+              <input
+                required
+                className="input-password"
+                type="password"
+                name="password"
+                value={password}
+                onChange={handleChange}
+                placeholder="your-password"
+              />
+            </div>
             {renderError()}
             {/* TAKE OUT BTN BELOW IF RENDERERROR IS FUNCTIONAL */}
             {/* <button className="login-btn" type="submit">

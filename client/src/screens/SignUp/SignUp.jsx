@@ -79,42 +79,50 @@ const SignUp = (props) => {
         <form onSubmit={onSignUp} className="signup-form">
           <h2 className="create-account">CREATE ACCOUNT</h2>
           <div className="signup-input-container">
-            <label>Username</label>
-            <input
-              required
-              className="signup-input-username"
-              type="text"
-              name="username"
-              value={username}
-              onChange={handleChange}
-            />
-            <label>Email Address</label>
-            <input
-              required
-              className="signup-input-email"
-              type="text"
-              name="email"
-              value={email}
-              onChange={handleChange}
-            />
-            <label>Password</label>
-            <input
-              required
-              className="signup-input-password"
-              type="password"
-              name="password"
-              value={password}
-              onChange={handleChange}
-            />
-            <label>Confirm Password</label>
-            <input
-              required
-              className="signup-input-confirm"
-              type="password"
-              name="confirmPassword"
-              value={confirmPassword}
-              onChange={handleChange}
-            />
+            <div className="signup-label-input-pair">
+              <label>Username</label>
+              <input
+                required
+                className="signup-input-username"
+                type="text"
+                name="username"
+                value={username}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="signup-label-input-pair">
+              <label>Email Address</label>
+              <input
+                required
+                className="signup-input-email"
+                type="text"
+                name="email"
+                value={email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="signup-label-input-pair">
+              <label>Password</label>
+              <input
+                required
+                className="signup-input-password"
+                type="password"
+                name="password"
+                value={password}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="signup-label-input-pair">
+              <label>Confirm Password</label>
+              <input
+                required
+                className="signup-input-confirm"
+                type="password"
+                name="confirmPassword"
+                value={confirmPassword}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           {/* end input div */}
 

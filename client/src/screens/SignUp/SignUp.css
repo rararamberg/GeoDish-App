@@ -3,7 +3,7 @@
 
 .signup-container {
   background-color: #f4f0ea;
-  padding: 5%;
+  padding: 5% 5% 20% 5%;
   display: flex;
   justify-content: center;
 }
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 5% 5% 5%;
+  padding: 5% 5% 5% 5%;
   line-height: 2;
 }
 
@@ -22,6 +22,7 @@
   font-family: "Chewy";
   letter-spacing: 2px;
   font-size: 36px;
+  padding-bottom: 50px;
 }
 
 .signup-input-container {
@@ -33,24 +34,30 @@
   letter-spacing: 0.5px;
 }
 
+.signup-label-input-pair {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
 .signup-input-username {
   border: 0;
-  height: 20px;
+  height: 30px;
 }
 
 .signup-input-email {
   border: 0;
-  height: 20px;
+  height: 30px;
 }
 
 .signup-input-password {
   border: 0;
-  height: 20px;
+  height: 30px;
 }
 
 .signup-input-confirm {
   border: 0;
-  height: 20px;
+  height: 30px;
 }
 
 .signup-btn {
@@ -58,12 +65,12 @@
   font-size: 22px;
   text-align: center;
   height: 40px;
-  width: 25%;
+  width: auto;
   align-self: center;
   background-color: #00917d;
   color: black;
   cursor: pointer;
-  padding: 2px;
+  /* padding-bottom: 4px; */
   letter-spacing: 1px;
   text-decoration: none;
   font-family: "Chewy";
@@ -86,5 +93,12 @@
     font-size: 12px;
     height: 25px;
     width: 22%;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .signup-btn {
+    font-size: 10px;
+    width: 60px;
   }
 }
