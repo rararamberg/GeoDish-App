@@ -109,3 +109,48 @@
   font-size: 12px;
   width: 200px;
 }
+
+@media screen and (max-width: 600px) {
+  .content-container {
+    flex-direction: column-reverse;
+  }
+
+  .content-image img {
+    display: flex;
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 15%;
+  }
+
+  .content-text {
+    width: auto;
+  }
+
+  .btn-explore {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .carousel-container {
+    margin-left: 18%;
+  }
+
+  .brand-statement {
+    font-size: 28px;
+  }
+
+  .main-brand-icon-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    margin-top: 40px;
+  }
+
+  .brand-substatement {
+    margin-left: 31%;
+  }
+
+  .brand-icon-container {
+    margin-top: 15px;
+  }
+}
