@@ -22,9 +22,9 @@
 .content-container {
   display: flex;
   flex-direction: row;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   margin-bottom: 25px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .content-text {
@@ -54,14 +54,13 @@
 
 .content-image img {
   width: 600px;
-  margin-left: 100px;
 }
 
 .carousel-container {
   display: flex;
   flex-direction: row;
   width: 350px;
-  height: 700px;
+  height: 600px;
   display: flex;
   justify-content: center;
   margin-left: 33%;
@@ -111,9 +110,13 @@
   width: 200px;
 }
 
+.brand-container {
+  margin-bottom: 20%;
+}
+
 @media screen and (max-width: 600px) {
   .content-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .content-image img {

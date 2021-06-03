@@ -3,18 +3,18 @@ import Carousel from "react-bootstrap/Carousel";
 
 const data = [
   {
-    image: "https://i.imgur.com/dVfUSAD.jpg",
-    caption: "Fish and Chips",
+    image: "https://i.imgur.com/RtexCFX.png",
+    // caption: "Fish and Chips",
     // description: "Description Here",
   },
   {
-    image: "https://i.imgur.com/EtqmA2U.jpg",
-    caption: "Deep Dish Pizza",
+    image: "https://i.imgur.com/kgtcgZp.png",
+    // caption: "Deep Dish Pizza",
     // description: "Description Here",
   },
   {
-    image: "https://i.imgur.com/ku8XTKl.jpg",
-    caption: "Shoyu Ramen",
+    image: "https://i.imgur.com/Q2bVYVH.png",
+    // caption: "Shoyu Ramen",
     // description: "Description Here",
   },
 ];
