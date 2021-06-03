@@ -1,13 +1,15 @@
 import Layout from "../../components/Layout/Layout";
 import { getDish, deleteDish } from "../../services/dishes";
-import { Link, useParams } from "react-router-dom";
+import { Link, Redirect, useParams, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./DishDetail.css";
 
 const DishDetail = (props) => {
   const [dish, setDish] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
+  const [isUpdated, setUpdated] = useState(false);
   const { id } = useParams();
+  const history = useHistory();
   console.log(id);
 
   useEffect(() => {
@@ -20,9 +22,24 @@ const DishDetail = (props) => {
     fetchDish();
   }, [id]);
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const updated = await deleteDish(id, dish);
+    setUpdated(true);
+  };
+
+  if (isUpdated) {
+    return <Redirect to={`/dishes/`} />;
+  }
+
   if (!isLoaded) {
     return <h1>Amazing food is on the way...</h1>;
   }
+
+  // const handleDelete = (dishId) => {
+  //   deleteDish(dishId);
+  //   history.push("/dishes");
+  // };
 
   return (
     <Layout user={props.user}>
@@ -50,10 +67,7 @@ const DishDetail = (props) => {
                 edit
               </Link>
             </button>
-            <button
-              className="delete-button"
-              onClick={() => deleteDish(dish._id)}
-            >
+            <button className="delete-button" onClick={handleSubmit}>
               delete
             </button>
           </div>
