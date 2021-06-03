@@ -13,8 +13,10 @@ const Dish = (props) => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            width: "350px",
+            width: "348px",
             height: "400px",
+            borderTopRightRadius: "5px",
+            borderTopLeftRadius: "5px",
           }}
         >
           {/* background image displayed here */}
