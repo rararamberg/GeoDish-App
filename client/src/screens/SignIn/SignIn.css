@@ -59,11 +59,15 @@
   width: auto;
   align-self: center;
   background-color: #00917d;
-  color: black;
+  color: #3b3834;
   cursor: pointer;
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Chewy";
+}
+
+.login-btn:hover {
+  color: #3b3834;
 }
 
 @media screen and (max-width: 600px) {

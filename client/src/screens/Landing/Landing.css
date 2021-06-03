@@ -22,9 +22,8 @@
 .content-container {
   display: flex;
   flex-direction: row;
-  padding-bottom: 0px;
   margin-bottom: 25px;
-  /* border-bottom: 1px solid black; */
+  justify-content: center;
 }
 
 .content-text {
@@ -32,6 +31,7 @@
   flex-direction: column;
   text-align: left;
   width: 300px;
+  margin-right: 250px;
 }
 
 .btn-explore {
@@ -52,6 +52,10 @@
   text-decoration: none;
 }
 
+.btn-explore:hover {
+  color: #3b3834;
+}
+
 .content-image img {
   width: 600px;
 }
@@ -59,11 +63,10 @@
 .carousel-container {
   display: flex;
   flex-direction: row;
-  width: 350px;
-  height: 600px;
+  width: 355px;
+  height: 550px;
   display: flex;
-  justify-content: center;
-  margin-left: 33%;
+  /* margin-left: ; */
 }
 
 .carousel {
@@ -114,47 +117,83 @@
   margin-bottom: 20%;
 }
 
+/* @media screen and (max-width: 968px) {
+  .content-container {
+    margin: 150px;
+  }
+} */
+
 @media screen and (max-width: 600px) {
   .content-container {
     flex-direction: column;
-  }
-
-  .content-image img {
-    display: flex;
-    width: 400px;
-    margin-top: 30px;
-    margin-left: 15%;
+    justify-content: center;
+    align-content: center;
   }
 
   .content-text {
+    text-align: center;
+    align-content: center;
     width: auto;
+    margin-right: 0px;
+    margin-bottom: 50px;
   }
 
   .btn-explore {
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-
-  .carousel-container {
-    margin-left: 18%;
-  }
-
-  .brand-statement {
-    font-size: 28px;
+    font-size: 22px;
+    text-align: center;
+    height: 50px;
+    width: 160px;
+    align-self: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: #00917d;
+    color: #3b3834;
+    border: none;
+    cursor: pointer;
+    padding: 9px;
+    font-family: "Chewy";
+    letter-spacing: 0.5px;
+    text-decoration: none;
   }
 
   .main-brand-icon-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
+    justify-content: center;
+    align-content: center;
     margin-top: 40px;
   }
 
-  .brand-substatement {
-    margin-left: 31%;
+  .brand-statement {
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid black;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
 
-  .brand-icon-container {
-    margin-top: 15px;
+  .brand-substatement {
+    padding-top: 20px;
+    font-size: 16px;
+    width: auto;
   }
+
+  .brand-container {
+    margin-bottom: 20%;
+  }
+
+  .carousel-container {
+    width: auto;
+    height: 550px;
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .carousel {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 950px) {
 }

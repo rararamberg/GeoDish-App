@@ -33,7 +33,7 @@ const AddDishes = (props) => {
   };
 
   if (isCreated) {
-    return <Redirect to={`/`} />;
+    return <Redirect to={`/dishes`} />;
   }
 
   return (

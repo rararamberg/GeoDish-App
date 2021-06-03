@@ -68,12 +68,16 @@
   width: auto;
   align-self: center;
   background-color: #00917d;
-  color: black;
+  color: #3b3834;
   cursor: pointer;
   /* padding-bottom: 4px; */
   letter-spacing: 1px;
   text-decoration: none;
   font-family: "Chewy";
+}
+
+.signup-btn:hover {
+  color: #3b3834;
 }
 
 @media screen and (max-width: 600px) {

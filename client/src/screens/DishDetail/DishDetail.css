@@ -73,11 +73,15 @@
   width: 50px;
   align-self: center;
   background-color: #e1d2bb;
-  color: black;
+  color: #3b3834;
   cursor: pointer;
   text-decoration: none;
   font-family: "Chewy";
   letter-spacing: 0.3px;
+}
+
+.edit-link-button:hover {
+  color: #3b3834;
 }
 
 .delete-button {
@@ -95,6 +99,10 @@
   padding: 2px;
   font-family: "Chewy";
   letter-spacing: 0.3px;
+}
+
+.delete-button:hover {
+  color: #e1d2bb;
 }
 
 @media screen and (max-width: 600px) {
