@@ -1,93 +1,100 @@
 nav {
-  padding: 20px;
-  background-color: #3b3834;
-  margin-bottom: 25px;
-  letter-spacing: 2.5px;
+    padding: 20px;
+    background-color: #3b3834;
+    margin-bottom: 25px;
+    letter-spacing: 2.5px;
 }
 
 nav a {
-  text-decoration: none;
-  padding: 10px;
-  transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
 nav .logo {
-  color: #00917d;
-  font-size: 56px;
-  text-shadow: 1px 1px #000000;
-  font-family: "Chewy";
+    color: #00917d;
+    font-size: 56px;
+    text-shadow: 1px 1px #000000;
+    font-family: "Chewy";
 }
 
 .nav-bar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .link {
-  margin: 10px 10px;
-  color: #f4f0ea;
+    margin: 10px 10px;
+    color: #f4f0ea;
 }
 
 .link:hover {
-  text-decoration: underline;
-  text-shadow: 1px 1px #000000;
-  font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 1px 1px #000000;
+    font-weight: bold;
 }
 
 .links {
-  padding: 20px 0px 10px 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+    padding: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .link-welcome {
-  color: #f4f0ea;
-  font-style: italic;
-  text-align: right;
+    color: #f4f0ea;
+    font-style: italic;
+    text-align: right;
 }
 
 .signout-link {
-  background-color: #e1d2bb;
-  color: #3b3834;
-  font-weight: bold;
-  border: 1px solid #000000;
+    background-color: #e1d2bb;
+    color: #3b3834;
+    font-weight: bold;
+    border: 1px solid #000000;
 }
 
 .signout-link:hover {
-  text-shadow: 1px 1px #000000;
-  font-weight: bold;
+    text-shadow: 1px 1px #000000;
+    font-weight: bold;
 }
 
 .signup-link {
-  background-color: #00917d;
-  color: #f4f0ea;
-  font-weight: bold;
-  border: 1px solid #000000;
-  vertical-align: text-bottom;
+    background-color: #00917d;
+    color: #f4f0ea;
+    font-weight: bold;
+    border: 1px solid #000000;
+    vertical-align: text-bottom;
 }
 
 .signup-link:hover {
-  text-shadow: 1px 1px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 @media screen and (max-width: 600px) {
-  nav {
-    padding: 10px 10px 20px 10px;
-  }
-  .nav-bar {
-    flex-direction: column;
-  }
-  .link-welcome {
-    text-align: center;
-    padding-top: 5px;
-  }
-  .links {
-    padding: 5px 0px;
-  }
+    nav {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        /* 🍔 menu
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #efefef; */
+    }
+
+    .link-welcome {
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .links {
+        padding: 5px 0px;
+    }
 }

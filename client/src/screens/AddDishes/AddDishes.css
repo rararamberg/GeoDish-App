@@ -11,7 +11,7 @@
     flex-direction: row;
     align-items: center;
     font-family: chewy;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .add-form-container {
@@ -25,7 +25,6 @@
     background-color: #E1D2BB;
 }
 
-
 .create-form input {
     display: flex;
     flex-direction: row;
@@ -36,11 +35,6 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-
-/* .create-form {
-    display: flex;
-    flex-direction: column;
-} */
 
 .create-form textarea {
     width: 82%;
@@ -72,7 +66,6 @@
     margin-bottom: 25px;
     font-family: chewy;
 }
-
 
 @media(max-width:600px) {
     .add-form-container {
@@ -120,6 +113,4 @@
         align-content: center;
         margin-left: 95px;
     }
-
-
 }
