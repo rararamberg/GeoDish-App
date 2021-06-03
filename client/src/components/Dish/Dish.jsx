@@ -23,7 +23,7 @@ const Dish = (props) => {
           <div className="dish-price">$ {props.price}</div>
           <div className="dish-name">{props.name}</div>
           <div className="dish-restaurant-name">{props.restaurant}</div>
-          <div className="dish-keywords">{props.keywords}</div>
+          <div className="dish-keywords">{props.keywords.join(", ")}</div>
         </div>
       </Link>
     </div>

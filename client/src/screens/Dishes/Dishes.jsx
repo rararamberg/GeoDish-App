@@ -85,21 +85,23 @@ const Dishes = (props) => {
             setSearchResult={setSearchResult}
           />
         </div>
-        <div className="search-sort-container">
-          <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-          <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-        </div>
-        <div className="dishes-cards-container">
-          {searchResult.map((dish) => (
-            <Dish
-              _id={dish._id}
-              img_url={dish.img_url}
-              name={dish.name}
-              restaurant={dish.restaurant}
-              price={dish.price}
-              keywords={dish.keywords}
-            />
-          ))}
+        <div className="dishes-search-sort-container">
+          <div className="search-sort-container">
+            <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+            <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+          </div>
+          <div className="dishes-cards-container">
+            {searchResult.map((dish) => (
+              <Dish
+                _id={dish._id}
+                img_url={dish.img_url}
+                name={dish.name}
+                restaurant={dish.restaurant}
+                price={dish.price}
+                keywords={dish.keywords}
+              />
+            ))}
+          </div>
         </div>
       </main>
     </Layout>
