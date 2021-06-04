@@ -29,4 +29,9 @@
   .search-sort-container {
     flex-direction: column;
   }
+  .dishes-cards-container {
+    margin: 0px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
