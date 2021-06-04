@@ -43,7 +43,7 @@ const insertData = async () => {
       keywords: ["dinner", "french"],
     },
     {
-      name: "Sikandari Raan (Marinated Whole Leg of Spring Lamb)",
+      name: "Sikandari Raan",
       restaurant: "Bukhara",
       location: "New Dehli, India",
       img_url:
@@ -53,17 +53,6 @@ const insertData = async () => {
         "Whole leg of spring lamb, braised in a marinade of malt vinegar, cinnamon and black cumin braised in the marinade, skewered and then finished in the tandoor. To say the least, one of the greatest mouth-watering dishes you will ever have.",
       price: "80",
       keywords: ["dinner", "indian"],
-    },
-    {
-      name: "Banchan Medley",
-      restaurant: "Jiwhaja",
-      location: "Seoul, Korea",
-      img_url: "https://i.imgur.com/GvwfAPa.jpg",
-      restaurant_url: "http://www.jihwajafood.co.kr/eng/",
-      description:
-        "Jihwaja as the best dining place in Seoul is willing to be a space where you can taste and feel the Korean food's essence and best food culture that royal food has.",
-      price: "30",
-      keywords: ["lunch", "dinner", "korean"],
     },
     {
       name: "Detroit Deep Dish Pizza",
@@ -86,7 +75,7 @@ const insertData = async () => {
       description:
         "A stylish departure from a traditional steakhouse, Bavette's embraces French flair without the formality, blending fine dining with unabashed fun.",
       price: "75",
-      keywords: ["dinner", "american", "fine-dining"],
+      keywords: ["dinner", "american"],
     },
     {
       name: "Ceviche",
@@ -98,7 +87,7 @@ const insertData = async () => {
       description:
         'This recipe for Peruvian fish ceviche is preparared with fresh fish, limes, onions, spicy peppers, and fresh cilantro. Ceviche, also known as cebiche or seviche, usually consists of seafood that is marinated with lime juice, the acidity of the lime juice actually "cooks" the seafood. Not all types of ceviches are made with seafood and not all seafood ceviches are made with raw seafood.',
       price: "60",
-      keywords: ["seafood", "lunch", "peruvian"],
+      keywords: ["lunch", "peruvian"],
     },
     {
       name: "Lomo Saltado",
@@ -110,7 +99,7 @@ const insertData = async () => {
       description:
         "Lomo saltado is a popular, traditional Peruvian dish, a stir fry that typically combines marinated strips of sirloin (or other beef steak) with onions, tomatoes, french fries, and other ingredients; and is typically served with rice. The dish originated as part of the chifa tradition, the Chinese cuisine of Peru, though its popularity has made it part of the mainstream culture.",
       price: "70",
-      keywords: ["beef", "lunch", "peruvian", "dinner"],
+      keywords: ["lunch", "dinner", "peruvian"],
     },
     {
       name: "Fish and Chips",
@@ -156,7 +145,7 @@ const insertData = async () => {
       description:
         "French onion soup is nowadays regarded as one of the most prized dishes of French cuisine. The broth is simple, made merely with caramelized onions and meat stock. However, the soup is distinguished by croûtes–pieces of crispy baked bread that are placed on top of the soup and are then generously covered with cheese.",
       price: "40",
-      keywords: ["beef", "cheese", "lunch", "french", "dinner", "soup"],
+      keywords: ["lunch", "french"],
     },
     {
       name: "Seco de Cordero",
@@ -168,7 +157,7 @@ const insertData = async () => {
       description:
         "Seco de Cordero is a delicious Peruvian lamb stew. Seasoned with aji peppers, cumin, and lots of cilantro, the lamb is braised in beer until its tender and flavorful. Yellow potatoes cook at the same time and soak up all the great flavor.",
       price: "60",
-      keywords: ["beef", "lunch", "peruvian", "dinner"],
+      keywords: ["lunch", "dinner", "peruvian"],
     },
     {
       name: "Anticuchos",
@@ -180,7 +169,7 @@ const insertData = async () => {
       description:
         "The most traditional Peruvian anticuchos are made of beef heart, but marinated chicken (anticuchos de pollo) or steak anticuchos are also popular.",
       price: "40",
-      keywords: ["beef", "lunch", "peruvian", "dinner"],
+      keywords: ["lunch", "peruvian"],
     },
     {
       name: "Hakata Ramen",
@@ -192,7 +181,7 @@ const insertData = async () => {
       description:
         "Hailing from Fukuoka, hakata is one of the most famous ramen styles in Japan. The base of the ramen is tonkotsu, the creamy pork bone broth which gives the dish its incredibly rich and layered taste. It is often only seasoned with shio (salt), and occasionally with shoyu (soy sauce) and miso (fermented soybean) paste.",
       price: "30",
-      keywords: ["soup", "lunch", "japanese", "dinner"],
+      keywords: ["lunch", "japanese"],
     },
     {
       name: "Shio Ramen",
@@ -204,7 +193,7 @@ const insertData = async () => {
       description:
         "Shio ramen is one of the four main flavor-based ramen categories. Like other ramen varieties, it combines three crucial elements: flavorful broth, noodles, and various toppings.",
       price: "30",
-      keywords: ["soup", "lunch", "japanese", "dinner"],
+      keywords: ["lunch", "japanese"],
     },
     {
       name: "Cannoli",
@@ -216,7 +205,7 @@ const insertData = async () => {
       description:
         "Selling up to 1,000 of these a week, there is a reason we are one of the best in the U.S. A true staple of Sicilian cuisine, cannolis are freshly made shells of fried pastry dough and filled with sweet, creamy ricotta.",
       price: "3.50",
-      keywords: ["italian", "dessert"],
+      keywords: ["dessert", "italian"],
     },
     {
       name: "Spaghetti",
@@ -227,7 +216,7 @@ const insertData = async () => {
       description:
         "A classic dish featuring our love for seafood, this spaghetti comes with clams and lightly smoked tomatoes.",
       price: "33.50",
-      keywords: ["italian", "dinner"],
+      keywords: ["dinner", "italian"],
     },
     {
       name: "Bouillabaisse",
@@ -239,7 +228,7 @@ const insertData = async () => {
       description:
         "a traditional Provençal fish stew originating from the port city of Marseille. Rich and spicy with key flavors of floral saffron, fennel, and orange zest ",
       price: "12",
-      keywords: ["french", "lunch"],
+      keywords: ["lunch", "french"],
     },
     {
       name: "Full English Breakfast",
@@ -251,7 +240,7 @@ const insertData = async () => {
       description:
         "the heartiest of breakfasts with bacon, sausage, baked beans, eggs, mushrooms, grilled tomatoes, and toast. ",
       price: "14",
-      keywords: ["english", "breakfast"],
+      keywords: ["breakfast", "english"],
     },
     {
       name: "Crumpets",
@@ -263,7 +252,7 @@ const insertData = async () => {
       description:
         "Not quite a cake. Not quite a pancake, either. Not a slice of toast, and not an English muffin. It's sort of what you'd get if all those delightful breakfast foods birthed a hybrid: a beautiful, thick round that holds as much love in its tiny holes as it does melted butter. Made from as little as four ingredients, crumpets may just be the ultimate comfort food ",
       price: "5",
-      keywords: ["english", "breakfast"],
+      keywords: ["breakfast", "english"],
     },
     {
       name: "Signature Nova",
@@ -275,7 +264,7 @@ const insertData = async () => {
       description:
         "slices of nova on a bagel with scallion cream cheese, freshly-sliced tomato, lettuce, onions + capers",
       price: "15",
-      keywords: ["american", "breakfast"],
+      keywords: ["breakfast", "american"],
     },
     {
       name: "Pain au Chocolat",
@@ -287,7 +276,7 @@ const insertData = async () => {
       description:
         "one of the best known French pastries, try a viennoiserie sweet roll consisting of  one or two pieces of dark chocolate in the center",
       price: "3",
-      keywords: ["french", "breakfast"],
+      keywords: ["breakfast", "french"],
     },
     {
       name: "Mame daifuku",
@@ -300,7 +289,7 @@ const insertData = async () => {
       description:
         "a wagashi consisting of sweet, pink-colored rice cake with a red bean paste center and wrapped in a pickled cherry blossom leaf.",
       price: "3",
-      keywords: ["japanese", "dessert"],
+      keywords: ["dessert", "japanese"],
     },
     {
       name: "Brownies",
@@ -312,7 +301,7 @@ const insertData = async () => {
       description:
         "Deliciously chewy, dense and fudgey with a rich chocolate flavor, the beloved brownies are one of the most popular American desserts.",
       price: "3",
-      keywords: ["american", "dessert", "chocolate"],
+      keywords: ["dessert", "american"],
     },
     {
       name: "Macarons",
@@ -324,7 +313,7 @@ const insertData = async () => {
       description:
         "a small, round, sweet meringue-based cookie sandwiches with filling in the middle are light and crunchy on the outside and chewy in the middle",
       price: "2",
-      keywords: ["french", "dessert", "chocolate"],
+      keywords: ["dessert", "french"],
     },
   ];
 

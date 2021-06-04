@@ -1,6 +1,6 @@
 nav {
   padding: 20px;
-  background-color: #3b3834;
+  background-color: #00917d;
   margin-bottom: 25px;
   letter-spacing: 2.5px;
 }
@@ -12,10 +12,14 @@ nav a {
 }
 
 nav .logo {
-  color: #00917d;
+  color: #3b3834;
   font-size: 56px;
   text-shadow: 1px 1px #000000;
   font-family: "Chewy";
+}
+
+nav .logo:hover {
+  color: #3b3834;
 }
 
 .nav-bar {
@@ -28,11 +32,13 @@ nav .logo {
 .link {
   margin: 10px 10px;
   color: #f4f0ea;
+  font-weight: bold;
+  text-shadow: 1px 1px #000000;
 }
 
 .link:hover {
   text-decoration: underline;
-  text-shadow: 1px 1px #000000;
+  color: #f4f0ea;
   font-weight: bold;
 }
 
@@ -60,33 +66,44 @@ nav .logo {
 }
 
 .signout-link:hover {
-  text-shadow: 1px 1px #000000;
-  font-weight: bold;
+  /* text-shadow: 1px 1px #000000; */
+  text-decoration: underline;
+  color: #3b3834;
 }
 
 .signup-link {
-  background-color: #00917d;
+  background-color: #3b3834;
   color: #f4f0ea;
   font-weight: bold;
   border: 1px solid #000000;
   vertical-align: text-bottom;
+  /* text-shadow: 1px 1px #000000; */
 }
 
 .signup-link:hover {
-  text-shadow: 1px 1px #000000;
+  text-decoration: underline;
+  background-color: #e1d2bb;
+  color: #3b3834;
 }
 
 @media screen and (max-width: 600px) {
   nav {
     padding: 10px 10px 20px 10px;
   }
+
   .nav-bar {
     flex-direction: column;
+    /* 🍔 menu
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #efefef; */
   }
+
   .link-welcome {
     text-align: center;
     padding-top: 5px;
   }
+
   .links {
     padding: 5px 0px;
   }

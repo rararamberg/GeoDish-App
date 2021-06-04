@@ -29,9 +29,6 @@ const Filter = ({ dishes, setSearchResult, handleFilter, handleSubmit }) => {
         <button value="japanese" onClick={filterDishes}>
           Japanese
         </button>
-        <button vlaue="korean" onClick={filterDishes}>
-          Korean
-        </button>
       </div>
       <div className="meal-links">
         <button value="breakfast" onClick={filterDishes}>

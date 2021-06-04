@@ -1,3 +1,10 @@
+.dishes-search-sort-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 5px;
+}
+
 .dishes-cards-container {
   display: flex;
   flex-direction: row;
@@ -5,12 +12,14 @@
   justify-content: center;
   align-items: flex-start;
   align-content: center;
+  margin: 0 15px;
 }
 
 .search-sort-container {
+  margin: 0 27px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   padding: 5px;

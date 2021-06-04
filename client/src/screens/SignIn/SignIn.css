@@ -3,7 +3,7 @@
 
 .sign-in-container {
   background-color: #f4f0ea;
-  padding: 5%;
+  padding: 5% 5% 20% 5%;
   display: flex;
   justify-content: center;
 }
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 5% 5% 5%;
+  padding: 5% 5% 5% 5%;
   line-height: 2;
 }
 
@@ -32,32 +32,42 @@
   font-size: 36px;
   font-family: "Chewy";
   letter-spacing: 2px;
+  padding-bottom: 50px;
+}
+
+.label-input-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
 }
 
 .input-email {
   border: 0;
-  height: 20px;
+  height: 30px;
 }
 
 .input-password {
   border: 0;
-  height: 20px;
+  height: 30px;
 }
 
 .login-btn {
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 22px;
   text-align: center;
   height: 40px;
   width: auto;
   align-self: center;
   background-color: #00917d;
-  color: black;
+  color: #3b3834;
   cursor: pointer;
-  padding: 2px;
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Chewy";
+}
+
+.login-btn:hover {
+  color: #3b3834;
 }
 
 @media screen and (max-width: 600px) {
