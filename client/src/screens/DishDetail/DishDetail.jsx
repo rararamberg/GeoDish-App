@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout/Layout";
 import { getDish, deleteDish } from "../../services/dishes";
-import { Link, Redirect, useParams, useHistory } from "react-router-dom";
+import { Link, Redirect, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./DishDetail.css";
 
@@ -9,7 +9,7 @@ const DishDetail = (props) => {
   const [isLoaded, setLoaded] = useState(false);
   const [isUpdated, setUpdated] = useState(false);
   const { id } = useParams();
-  const history = useHistory();
+
   console.log(id);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const DishDetail = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const updated = await deleteDish(id, dish);
+    await deleteDish(id, dish);
     setUpdated(true);
   };
 
@@ -35,11 +35,6 @@ const DishDetail = (props) => {
   if (!isLoaded) {
     return <h1>Amazing food is on the way...</h1>;
   }
-
-  // const handleDelete = (dishId) => {
-  //   deleteDish(dishId);
-  //   history.push("/dishes");
-  // };
 
   return (
     <Layout user={props.user}>

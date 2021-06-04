@@ -37,7 +37,7 @@ const EditDish = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const updated = await updateDish(id, dish);
+    await updateDish(id, dish);
     setUpdated(true);
   };
 
