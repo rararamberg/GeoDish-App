@@ -29,7 +29,7 @@ const DishDetail = (props) => {
   };
 
   if (isUpdated) {
-    return <Redirect to={`/dishes/`} />;
+    return <Redirect to={`/dishes`} />;
   }
 
   if (!isLoaded) {
