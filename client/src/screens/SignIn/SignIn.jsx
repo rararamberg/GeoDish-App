@@ -100,10 +100,6 @@ const SignIn = (props) => {
               />
             </div>
             {renderError()}
-            {/* TAKE OUT BTN BELOW IF RENDERERROR IS FUNCTIONAL */}
-            {/* <button className="login-btn" type="submit">
-            LOG IN
-          </button> */}
           </div>
         </form>
       </main>

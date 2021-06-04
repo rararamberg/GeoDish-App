@@ -15,7 +15,6 @@ const DishDetail = (props) => {
   useEffect(() => {
     const fetchDish = async () => {
       const dish = await getDish(id);
-      console.log(dish);
       setDish(dish);
       setLoaded(true);
     };
@@ -51,7 +50,6 @@ const DishDetail = (props) => {
             <div className="details-location">{dish.location}</div>
             <div className="details-description">{dish.description}</div>
             <div className="details-price">${dish.price}.00</div>
-            {/* <div className="keywords">{dish.keywords}</div> */}
           </div>
           <div className="button-container">
             <button className="edit-button">
