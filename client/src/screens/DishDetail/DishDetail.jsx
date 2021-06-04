@@ -10,8 +10,6 @@ const DishDetail = (props) => {
   const [isUpdated, setUpdated] = useState(false);
   const { id } = useParams();
 
-  console.log(id);
-
   useEffect(() => {
     const fetchDish = async () => {
       const dish = await getDish(id);
@@ -45,7 +43,9 @@ const DishDetail = (props) => {
           <div className="details">
             <div className="details-name">{dish.name}</div>
             <div className="details-restaurant">
-              <a href={dish.restaurant_url}>{dish.restaurant}</a>
+              <a href={dish.restaurant_url} target="_blank" rel="noreferrer">
+                {dish.restaurant}
+              </a>
             </div>
             <div className="details-location">{dish.location}</div>
             <div className="details-description">{dish.description}</div>
