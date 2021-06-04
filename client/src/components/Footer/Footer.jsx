@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright-year">
-        <p style={{ fontWeight: "bold" }}>© GA SEI LOON 2021</p>
+        <p>© GA SEI LOON 2021</p>
       </div>
     </footer>
   );

@@ -113,9 +113,15 @@
   color: #e1d2bb;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .dish-detail-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .button-container {
+    justify-content: center;
   }
 }
 
@@ -123,6 +129,7 @@
   .image-container {
     padding-right: 0;
     padding-bottom: 6%;
+    width: 95%;
   }
 
   .dish-image {
@@ -130,80 +137,11 @@
   }
 
   .detail-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    line-height: 1.6;
+    width: 95%;
   }
 
   .details {
-    background-color: #e1d2bb;
-    border-color: black;
-    text-align: left;
-    margin-bottom: 30px;
     padding: 5px 10px 10px 15px;
-    font-family: "Roboto";
-  }
-
-  .details-name {
-    font-size: 36px;
-    font-weight: bold;
-  }
-
-  .details-location {
-    margin-bottom: 20px;
-  }
-
-  .details-description {
-    margin-bottom: 20px;
-    font-size: 13px;
-  }
-
-  .details-price {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  .button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  /* does anyone have any buttons that aren't defined that would coincide with this...? */
-  .edit-button {
-    background-color: #e1d2bb;
-    height: 40px;
-    margin-top: 10px;
-  }
-
-  .edit-link-button {
-    font-size: 22px;
-    text-align: center;
-    width: 50px;
-    align-self: center;
-    /* background-color: #e1d2bb; */
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: "Chewy";
-    letter-spacing: 0.3px;
-  }
-
-  .delete-button {
-    font-size: 22px;
-    text-align: center;
-    height: 40px;
-    width: 70px;
-    align-self: center;
-    margin-top: 10px;
-    margin-left: 40px;
-    background-color: black;
-    color: #e1d2bb;
-    border: none;
-    cursor: pointer;
-    padding: 2px;
-    font-family: "Chewy";
-    letter-spacing: 0.3px;
   }
 }

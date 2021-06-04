@@ -66,7 +66,6 @@ nav .logo:hover {
 }
 
 .signout-link:hover {
-  /* text-shadow: 1px 1px #000000; */
   text-decoration: underline;
   color: #3b3834;
 }
@@ -77,7 +76,6 @@ nav .logo:hover {
   font-weight: bold;
   border: 1px solid #000000;
   vertical-align: text-bottom;
-  /* text-shadow: 1px 1px #000000; */
 }
 
 .signup-link:hover {
@@ -93,10 +91,6 @@ nav .logo:hover {
 
   .nav-bar {
     flex-direction: column;
-    /* 🍔 menu
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: #efefef; */
   }
 
   .link-welcome {
