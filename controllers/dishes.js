@@ -19,24 +19,10 @@ export const getDish = async (req, res) => {
     console.log(e);
     res.send("Dish not found!");
   }
-
-  // POSSIBLE DEBUGGING HERE
-  // try {
-  //   const { id } = req.params;
-  //   const dish = await Dish.findById(id).populate("userId");
-  //   if (dish) {
-  //     return res.json(dish);
-  //   }
-  //   res.status(404).json({ message: "Dish not found!" });
-  // } catch (error) {
-  //   console.log(error.message);
-  //   res.status(500).json({ error: error.message });
-  // }
 };
 
 export const createDish = async (req, res) => {
   try {
-    // Possible Bug: duplicate awaits
     const dish = await new Dish(req.body);
     await dish.save();
     res.status(201).json(dish);

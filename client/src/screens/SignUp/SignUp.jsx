@@ -125,10 +125,7 @@ const SignUp = (props) => {
             </div>
           </div>
           {/* end input div */}
-
           {renderError()}
-          {/* TAKE OUT BTN BELOW IF RENDERERROR IS FUNCTIONAL */}
-          {/* <button className="signup-btn">SIGN UP</button> */}
         </form>
       </main>
     </Layout>

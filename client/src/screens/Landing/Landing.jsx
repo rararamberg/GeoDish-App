@@ -29,23 +29,12 @@ function Landing(props) {
           <div className="carousel-container">
             <Carousel className="carousel" />
           </div>
-          {/* <div className="content-image">
-            <img src="https://i.imgur.com/o1yJG73.png" alt="around the world" />
-          </div> */}
-        </div>{" "}
-        {/* content-container */}
-        {/* <div className="content-image">
-          <img src="https://i.imgur.com/o1yJG73.png" alt="around the world" />
-        </div> */}
-        {/* <div className="carousel-container">
-          <Carousel className="carousel" />
-        </div> */}
+        </div>
         <section className="brand">
           <div className="brand-container">
             <div className="brand-statement">
               To be human is to experience food.
-            </div>{" "}
-            {/* brand-statement */}
+            </div>
             <div className="main-brand-icon-container">
               <div className="brand-icon-container">
                 <div className="icon-container">
@@ -61,11 +50,10 @@ function Landing(props) {
                     We’re living in a world that moves a million miles an hour.
                     Take a moment to pause and connect with the things around
                     you. We believe that food is an avenue to keep you grounded
-                    during the crazy times.{" "}
+                    during the crazy times.
                   </p>
                 </div>
-              </div>{" "}
-              {/* brand-icon-container */}
+              </div>
               <div className="brand-icon-container">
                 <div className="icon-container">
                   <img
@@ -83,8 +71,7 @@ function Landing(props) {
                     just exploring.
                   </p>
                 </div>
-              </div>{" "}
-              {/* brand-icon-container */}
+              </div>
               <div className="brand-icon-container">
                 <div className="icon-container">
                   <img
@@ -99,17 +86,14 @@ function Landing(props) {
                     There is no better way to experience food than by sharing.
                     Whether you’re sharing a meal or suggesting a restaurant,
                     the community of food allows us to appreciate everything
-                    else around us.{" "}
+                    else around us.
                   </p>
                 </div>
-              </div>{" "}
-              {/* brand-icon-container */}
+              </div>
             </div>
-          </div>{" "}
-          {/* brand-container */}
+          </div>
         </section>
-      </div>{" "}
-      {/* landing-container */}
+      </div>
     </Layout>
   );
 }

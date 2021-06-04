@@ -1,7 +1,9 @@
 import "./Filter.css";
 
+// deconstruct all passed in props
 const Filter = ({ dishes, setSearchResult, handleFilter, handleSubmit }) => {
   const filterDishes = (event) => {
+    // pass the value of each button click through filter function
     handleFilter(event.target.value);
   };
 

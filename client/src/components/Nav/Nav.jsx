@@ -40,10 +40,6 @@ const Nav = ({ user }) => {
           <div className="links">
             {alwaysOptions}
             {user ? authenticatedOptions : unauthenticatedOptions}
-            {/* <NavLink to="/">Dishes</NavLink>
-            <NavLink to="/add-dishes">Create Dish</NavLink>
-            <NavLink to="/sign-in">Sign In</NavLink>
-          <NavLink to="/sign-up">Sign Up</NavLink> */}
           </div>
           {user && <div className="link-welcome">Welcome, {user.username}</div>}
         </div>

@@ -24,13 +24,11 @@ const Dishes = (props) => {
   }, []);
 
   const handleFilter = (type) => {
-    console.log(type);
     const results = dishes.filter((dish) => dish.keywords.includes(type));
     if (!results.length) {
       console.log("sorry no dish found!");
       setSearchResult([]);
     } else {
-      console.log(results);
       setSearchResult(results);
       setApplySort(true);
     }
@@ -77,7 +75,6 @@ const Dishes = (props) => {
     <Layout user={props.user}>
       <main className="dishes-page-container">
         <div className="category-links-container">
-          {/* filter category links go here*/}
           <Filter
             handleSubmit={handleSubmit}
             handleFilter={handleFilter}
@@ -99,6 +96,7 @@ const Dishes = (props) => {
                 restaurant={dish.restaurant}
                 price={dish.price}
                 keywords={dish.keywords}
+                key={dish._id}
               />
             ))}
           </div>
