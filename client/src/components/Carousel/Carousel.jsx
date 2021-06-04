@@ -4,12 +4,15 @@ import Carousel from "react-bootstrap/Carousel";
 const data = [
   {
     image: "https://i.imgur.com/RtexCFX.png",
+    id: "01",
   },
   {
     image: "https://i.imgur.com/kgtcgZp.png",
+    id: "02",
   },
   {
     image: "https://i.imgur.com/Q2bVYVH.png",
+    id: "03",
   },
 ];
 
@@ -28,7 +31,7 @@ function HomeCarousel() {
     >
       {data.map((slide, i) => {
         return (
-          <Carousel.Item>
+          <Carousel.Item key={slide.id}>
             <img className="d-block w-100" src={slide.image} alt="slider" />
           </Carousel.Item>
         );

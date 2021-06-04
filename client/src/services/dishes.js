@@ -3,7 +3,6 @@ import api from "./apiConfig";
 export const getDishes = async () => {
   try {
     const response = await api.get("/dishes");
-    console.log(response);
     return response.data;
   } catch (error) {
     throw error;

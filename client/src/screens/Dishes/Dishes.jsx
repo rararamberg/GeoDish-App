@@ -96,6 +96,7 @@ const Dishes = (props) => {
                 restaurant={dish.restaurant}
                 price={dish.price}
                 keywords={dish.keywords}
+                key={dish._id}
               />
             ))}
           </div>
